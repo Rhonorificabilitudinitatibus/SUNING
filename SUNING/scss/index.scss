@@ -1,0 +1,536 @@
+@charset "UTF-8";
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+$wid:1190px;
+#top_wrapper {
+    width: 100%;
+    .top-active-img {
+        background: #590208;
+        width: 100%;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .b-close {
+        //      display: none;
+        position: absolute;
+        top: 3px;
+        right: 42px;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        overflow: hidden;
+        i {
+            font-style: normal;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        .bg {
+            z-index: 1;
+            background: #000;
+            opacity: .3;
+        }
+        .text {
+            z-index: 2;
+            font: 16px/16px simsun;
+            text-align: center;
+        }
+    }
+    .b-open {
+        display: none;
+        position: absolute;
+        top: 3px;
+        right: 42px;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        overflow: hidden;
+        i {
+            font-style: normal;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        .bg {
+            z-index: 1;
+            background: #000;
+            opacity: .3;
+        }
+        .text {
+            z-index: 2;
+            font: 16px/16px simsun;
+            text-align: center;
+        }
+    }
+}
+
+#nav-wrap {
+    position: relative;
+    width: 100%;
+    min-width: 990px;
+    border-bottom: 1px solid #eee;
+    background: #f5f5f5;
+    ine-height: 35px;
+    height: 35px;
+    .nav {
+        font-size: 12px;
+        width: $wid;
+        margin: 0 auto;
+        a{
+            &:hover{
+                    color:#ff6600;
+                }
+        }
+        .nav-left {
+            float: left;
+            line-height: 35px;
+            .ng-sn-site-nav {
+                display: none;
+            }
+        }
+    }
+    a {
+        color: #666;
+        i,
+        em {
+            font-style: normal;
+        }
+    }
+    .ng-bar-node {
+        position: relative;
+        float: left;
+        padding: 0 10px;
+        overflow: hidden;
+        line-height: 35px;
+        height: 35px;
+        .ng-backhome {
+            float: left;
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 3px;
+            width: 16px;
+            line-height: 31px;
+        }
+        span {
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+    .ng-bar-node-backhome {
+        span {
+            float: left;
+        }
+    }
+    .ng-bar-node-box {
+        position: relative;
+        float: left;
+        margin-left: -1px;
+        line-height: 35px;
+        .ng-bar-node-site {
+            width: 65px;
+        }
+    }
+    .ng-bar-node {
+        display: block;
+        position: relative;
+        float: left;
+        padding: 0 10px;
+        overflow: hidden;
+        line-height: 35px;
+        height: 35px;
+    }
+    .nav {
+        .nav-left {
+            .ng-site-nav-box {
+                border-left: 1px solid #f5f5f5;
+                border-right: 1px solid #f5f5f5;
+                &:hover {
+                    background: #fff;
+                    z-index: 1;
+                    border-color: #ddd;
+                    .ng-sn-site-nav {
+                        border-top: none;
+                        display: block;
+                        left: -1px;
+                    }
+                }
+                span {
+                    position: relative;
+                }
+                i {
+                    position: absolute;
+                    display: inline-block;
+                    height: 16px;
+                    width: 16px;
+                    background: url(../img/index-pic/newbg.png) no-repeat;
+                    right: -18px;
+                    top: 0;
+                }
+                .hot {
+                    background-position: -93px 0;
+                }
+                .down {
+                    display: inline-block;
+                    font-size: 10px;
+                    width: 10px;
+                    color: #bbb;
+                    margin-left: 3px;
+                    vertical-align: middle;
+                    transform-origin: 50% 48%;
+                    -webkit-transform-origin: 50% 50%;
+                    transition: transform .2s ease-in;
+                }
+                .ng-bar-node-site {
+                    &:hover {
+                        .down {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ng-sn-site-nav {
+        width: 988px;
+        padding: 20px 0;
+        left: 0;
+    }
+    .ng-d-box {
+        position: absolute;
+        top: 35px;
+        border: 1px solid #ddd;
+        background: #fff;
+        a {
+            padding: 0;
+            float: left;
+        }
+    }
+    .sn-site-list {
+        float: left;
+        width: 176px;
+        border-right: 1px solid #eee;
+        padding-left: 20px;
+        dt {
+            height: 25px;
+            width: 100%;
+            font-size: 14px;
+            font-family: "Microsoft Yahei";
+            line-height: 17px;
+        }
+        dd {
+            width: 100%;
+            overflow: hidden;
+            p {
+                float: left;
+                height: 25px;
+                width: 78px;
+                line-height: 25px;
+            }
+            a {
+                position: relative;
+                display: inline-block;
+            }
+        }
+    }
+    .rnb {
+        border: 0;
+    }
+    .ng-close {
+        position: absolute;
+        display: inline-block;
+        width: 35px;
+        color: #989898;
+        right: 1px;
+        top: 1px;
+        font-size: 30px;
+        text-align: center;
+        -webkit-transition: transform .2s ease-in;
+        &:hover {
+            transform: rotate(-180deg);
+        }
+    }
+    .ng-bar-node-box {
+        position: relative;
+        float: left;
+        margin-left: -1px;
+    }
+    .ng-bar-node {
+        display: block;
+        position: relative;
+        float: left;
+        padding: 0 10px;
+        overflow: hidden;
+        line-height: 35px;
+        height: 35px;
+        .down {
+            display: inline-block;
+            font-size: 10px;
+            width: 10px;
+            color: #bbb;
+            margin-left: 3px;
+            vertical-align: middle;
+            transform-origin: 50% 48%;
+            -webkit-transform-origin: 50% 50%;
+            -webkit-transition: transform .2s ease-in;
+            -moz-transition: transform .2s ease-in;
+            -o-transition: transform .2s ease-in;
+            transition: transform .2s ease-in;
+            
+        }
+        &:hover{
+                .down{
+                    transform: rotate(-180deg);
+                }
+            }
+    }
+    .shop-center-child {
+        width: 162px;
+        padding-top: 5px;
+        left: 0;
+        right: auto;
+        display:none;
+    }
+    .ng-down-box{
+        padding-bottom: 5px;
+    }
+    .ng-d-box {
+        position: absolute;
+        top: 35px;
+        border: 1px solid #ddd;
+        background: #fff;
+        a {
+            padding: 0;
+            float: left;
+        }
+    }
+    .ng-ser-list{
+        a {
+            height: 28px;
+            line-height: 28px;
+        }
+    }
+    .ng-down-box{
+        a {
+            display: block;
+            padding-left: 10px;
+            width: 71px;
+            em{
+                vertical-align: middle;
+            }
+        }
+        .ng-vip-union {
+            em{
+                
+            font-size: 16px;
+            color: #ffd200;
+            text-decoration: none;
+            margin-left: 2px;
+            line-height: 27px;
+            }
+        }
+    }
+    .service-center-child {
+        display: none;
+        a {
+            em {
+                display: inline-block;
+                font-size: 16px;
+                color: #ffd200;
+                text-decoration: none;
+                margin-left: 44px;
+                line-height: 27px;
+                margin-top: -58px;
+            }
+        }
+    }
+    .lazy-bar-box{
+        border-left: 1px solid #f5f5f5;
+        border-right: 1px solid #f5f5f5;
+        &:hover{
+            background: #fff;
+            z-index: 1;
+            border-color: #ddd;
+            .ng-ser-list{
+                border-top: none;
+                display: block;
+                left: -1px;
+            }
+        }
+    }
+    .service-center-child {
+        width: 162px;
+        padding-top: 5px;
+        left: auto;
+        right: 0;
+    }
+    .reg-bar-node{
+        .reg-bbb {
+            position: relative;
+            margin-left: 10px;
+            color: #F60;
+        }
+    }
+    .myorder-handle{
+        border-left: 1px solid #f5f5f5;
+        border-right: 1px solid #f5f5f5;
+        .ng-bar-node{
+            .down{
+                
+                margin-left: 0px;
+            }
+        }
+        .myorder-child{
+            display: none;
+        }
+        &:hover{
+            background: #fff;
+            z-index: 1;
+            border-color: #ddd;
+           .myorder-child{
+                border-top: none;
+                display: block;
+                left: -1px;
+           } 
+        }
+    }
+    .mysuning-child{
+        width: 162px;
+    }
+    .mysuning-infor {
+        width: 142px;
+        height: 56px;
+        margin: 5px 10px;
+        overflow: hidden;
+        .headimg {
+            float: left;
+            width: 54px;
+            height: 54px;
+            border: 1px solid #f7f7f7;
+            padding: 0;
+            img {
+                display: block;
+                width: 54px;
+                height: 54px;
+                border: 0;
+            }
+        }
+    }
+    .clearfix{
+        zoom: 1;
+    }
+    .mysuning-detail {
+        float: left;
+        width: 86px;
+        height: 56px;
+        .login {
+            height: 28px;
+            overflow: hidden;
+        }
+        a {
+            display: block;
+            margin-left: 20px;
+            line-height: 28px;
+            float: none;
+            padding: 0;
+            width: 64px;
+            word-break: break-all;
+        }
+        .username {
+            display: none;
+            height: 28px;
+            overflow: hidden;
+        }
+        .daka {
+            height: 22px;
+            text-align: center;
+            color: #FFF;
+            text-decoration: none;
+            line-height: 22px;
+            background: #F60;
+            border-radius: 4px;
+        }
+    }
+    .mysuning-handle{
+        border-left: 1px solid #f5f5f5;
+        border-right: 1px solid #f5f5f5;
+        .mysuning-child{
+            display: none;
+        }
+        &:hover{
+            background: #fff;
+            z-index: 1;
+            border-color: #ddd;
+            .mysuning-child{
+                border-top: none;
+                display: block;
+                left: -1px;
+            }
+        }
+    }
+}

@@ -1,3 +1,417 @@
+@charset "UTF-8";
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0; }
 
+ul,
+li,
+ol {
+  list-style: none; }
+
+img,
+fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input,
+a {
+  outline: none; }
+
+#top_wrapper {
+  width: 100%; }
+  #top_wrapper .top-active-img {
+    background: #590208;
+    width: 100%; }
+    #top_wrapper .top-active-img img {
+      margin: 0 auto; }
+  #top_wrapper .b-close {
+    position: absolute;
+    top: 3px;
+    right: 42px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    overflow: hidden; }
+    #top_wrapper .b-close i {
+      font-style: normal;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer; }
+    #top_wrapper .b-close .bg {
+      z-index: 1;
+      background: #000;
+      opacity: .3; }
+    #top_wrapper .b-close .text {
+      z-index: 2;
+      font: 16px/16px simsun;
+      text-align: center; }
+  #top_wrapper .b-open {
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 42px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    overflow: hidden; }
+    #top_wrapper .b-open i {
+      font-style: normal;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer; }
+    #top_wrapper .b-open .bg {
+      z-index: 1;
+      background: #000;
+      opacity: .3; }
+    #top_wrapper .b-open .text {
+      z-index: 2;
+      font: 16px/16px simsun;
+      text-align: center; }
+
+#nav-wrap {
+  position: relative;
+  width: 100%;
+  min-width: 990px;
+  border-bottom: 1px solid #eee;
+  background: #f5f5f5;
+  ine-height: 35px;
+  height: 35px; }
+  #nav-wrap .nav {
+    font-size: 12px;
+    width: 1190px;
+    margin: 0 auto; }
+    #nav-wrap .nav a:hover {
+      color: #ff6600; }
+    #nav-wrap .nav .nav-left {
+      float: left;
+      line-height: 35px; }
+      #nav-wrap .nav .nav-left .ng-sn-site-nav {
+        display: none; }
+  #nav-wrap a {
+    color: #666; }
+    #nav-wrap a i,
+    #nav-wrap a em {
+      font-style: normal; }
+  #nav-wrap .ng-bar-node {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    overflow: hidden;
+    line-height: 35px;
+    height: 35px; }
+    #nav-wrap .ng-bar-node .ng-backhome {
+      float: left;
+      display: inline-block;
+      font-size: 20px;
+      margin-right: 3px;
+      width: 16px;
+      line-height: 31px; }
+    #nav-wrap .ng-bar-node span {
+      display: inline-block;
+      cursor: pointer; }
+  #nav-wrap .ng-bar-node-backhome span {
+    float: left; }
+  #nav-wrap .ng-bar-node-box {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    line-height: 35px; }
+    #nav-wrap .ng-bar-node-box .ng-bar-node-site {
+      width: 65px; }
+  #nav-wrap .ng-bar-node {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    overflow: hidden;
+    line-height: 35px;
+    height: 35px; }
+  #nav-wrap .nav .nav-left .ng-site-nav-box {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5; }
+    #nav-wrap .nav .nav-left .ng-site-nav-box:hover {
+      background: #fff;
+      z-index: 1;
+      border-color: #ddd; }
+      #nav-wrap .nav .nav-left .ng-site-nav-box:hover .ng-sn-site-nav {
+        border-top: none;
+        display: block;
+        left: -1px; }
+    #nav-wrap .nav .nav-left .ng-site-nav-box span {
+      position: relative; }
+    #nav-wrap .nav .nav-left .ng-site-nav-box i {
+      position: absolute;
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background: url(../img/index-pic/newbg.png) no-repeat;
+      right: -18px;
+      top: 0; }
+    #nav-wrap .nav .nav-left .ng-site-nav-box .hot {
+      background-position: -93px 0; }
+    #nav-wrap .nav .nav-left .ng-site-nav-box .down {
+      display: inline-block;
+      font-size: 10px;
+      width: 10px;
+      color: #bbb;
+      margin-left: 3px;
+      vertical-align: middle;
+      transform-origin: 50% 48%;
+      -webkit-transform-origin: 50% 50%;
+      transition: transform .2s ease-in; }
+    #nav-wrap .nav .nav-left .ng-site-nav-box .ng-bar-node-site:hover .down {
+      transform: rotate(-180deg); }
+  #nav-wrap .ng-sn-site-nav {
+    width: 988px;
+    padding: 20px 0;
+    left: 0; }
+  #nav-wrap .ng-d-box {
+    position: absolute;
+    top: 35px;
+    border: 1px solid #ddd;
+    background: #fff; }
+    #nav-wrap .ng-d-box a {
+      padding: 0;
+      float: left; }
+  #nav-wrap .sn-site-list {
+    float: left;
+    width: 176px;
+    border-right: 1px solid #eee;
+    padding-left: 20px; }
+    #nav-wrap .sn-site-list dt {
+      height: 25px;
+      width: 100%;
+      font-size: 14px;
+      font-family: "Microsoft Yahei";
+      line-height: 17px; }
+    #nav-wrap .sn-site-list dd {
+      width: 100%;
+      overflow: hidden; }
+      #nav-wrap .sn-site-list dd p {
+        float: left;
+        height: 25px;
+        width: 78px;
+        line-height: 25px; }
+      #nav-wrap .sn-site-list dd a {
+        position: relative;
+        display: inline-block; }
+  #nav-wrap .rnb {
+    border: 0; }
+  #nav-wrap .ng-close {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    color: #989898;
+    right: 1px;
+    top: 1px;
+    font-size: 30px;
+    text-align: center;
+    -webkit-transition: transform .2s ease-in; }
+    #nav-wrap .ng-close:hover {
+      transform: rotate(-180deg); }
+  #nav-wrap .ng-bar-node-box {
+    position: relative;
+    float: left;
+    margin-left: -1px; }
+  #nav-wrap .ng-bar-node {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    overflow: hidden;
+    line-height: 35px;
+    height: 35px; }
+    #nav-wrap .ng-bar-node .down {
+      display: inline-block;
+      font-size: 10px;
+      width: 10px;
+      color: #bbb;
+      margin-left: 3px;
+      vertical-align: middle;
+      transform-origin: 50% 48%;
+      -webkit-transform-origin: 50% 50%;
+      -webkit-transition: transform .2s ease-in;
+      -moz-transition: transform .2s ease-in;
+      -o-transition: transform .2s ease-in;
+      transition: transform .2s ease-in; }
+    #nav-wrap .ng-bar-node:hover .down {
+      transform: rotate(-180deg); }
+  #nav-wrap .shop-center-child {
+    width: 162px;
+    padding-top: 5px;
+    left: 0;
+    right: auto;
+    display: none; }
+  #nav-wrap .ng-down-box {
+    padding-bottom: 5px; }
+  #nav-wrap .ng-d-box {
+    position: absolute;
+    top: 35px;
+    border: 1px solid #ddd;
+    background: #fff; }
+    #nav-wrap .ng-d-box a {
+      padding: 0;
+      float: left; }
+  #nav-wrap .ng-ser-list a {
+    height: 28px;
+    line-height: 28px; }
+  #nav-wrap .ng-down-box a {
+    display: block;
+    padding-left: 10px;
+    width: 71px; }
+    #nav-wrap .ng-down-box a em {
+      vertical-align: middle; }
+  #nav-wrap .ng-down-box .ng-vip-union em {
+    font-size: 16px;
+    color: #ffd200;
+    text-decoration: none;
+    margin-left: 2px;
+    line-height: 27px; }
+  #nav-wrap .service-center-child {
+    display: none; }
+    #nav-wrap .service-center-child a em {
+      display: inline-block;
+      font-size: 16px;
+      color: #ffd200;
+      text-decoration: none;
+      margin-left: 44px;
+      line-height: 27px;
+      margin-top: -58px; }
+  #nav-wrap .lazy-bar-box {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5; }
+    #nav-wrap .lazy-bar-box:hover {
+      background: #fff;
+      z-index: 1;
+      border-color: #ddd; }
+      #nav-wrap .lazy-bar-box:hover .ng-ser-list {
+        border-top: none;
+        display: block;
+        left: -1px; }
+  #nav-wrap .service-center-child {
+    width: 162px;
+    padding-top: 5px;
+    left: auto;
+    right: 0; }
+  #nav-wrap .reg-bar-node .reg-bbb {
+    position: relative;
+    margin-left: 10px;
+    color: #F60; }
+  #nav-wrap .myorder-handle {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5; }
+    #nav-wrap .myorder-handle .ng-bar-node .down {
+      margin-left: 0px; }
+    #nav-wrap .myorder-handle .myorder-child {
+      display: none; }
+    #nav-wrap .myorder-handle:hover {
+      background: #fff;
+      z-index: 1;
+      border-color: #ddd; }
+      #nav-wrap .myorder-handle:hover .myorder-child {
+        border-top: none;
+        display: block;
+        left: -1px; }
+  #nav-wrap .mysuning-child {
+    width: 162px; }
+  #nav-wrap .mysuning-infor {
+    width: 142px;
+    height: 56px;
+    margin: 5px 10px;
+    overflow: hidden; }
+    #nav-wrap .mysuning-infor .headimg {
+      float: left;
+      width: 54px;
+      height: 54px;
+      border: 1px solid #f7f7f7;
+      padding: 0; }
+      #nav-wrap .mysuning-infor .headimg img {
+        display: block;
+        width: 54px;
+        height: 54px;
+        border: 0; }
+  #nav-wrap .clearfix {
+    zoom: 1; }
+  #nav-wrap .mysuning-detail {
+    float: left;
+    width: 86px;
+    height: 56px; }
+    #nav-wrap .mysuning-detail .login {
+      height: 28px;
+      overflow: hidden; }
+    #nav-wrap .mysuning-detail a {
+      display: block;
+      margin-left: 20px;
+      line-height: 28px;
+      float: none;
+      padding: 0;
+      width: 64px;
+      word-break: break-all; }
+    #nav-wrap .mysuning-detail .username {
+      display: none;
+      height: 28px;
+      overflow: hidden; }
+    #nav-wrap .mysuning-detail .daka {
+      height: 22px;
+      text-align: center;
+      color: #FFF;
+      text-decoration: none;
+      line-height: 22px;
+      background: #F60;
+      border-radius: 4px; }
+  #nav-wrap .mysuning-handle {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5; }
+    #nav-wrap .mysuning-handle .mysuning-child {
+      display: none; }
+    #nav-wrap .mysuning-handle:hover {
+      background: #fff;
+      z-index: 1;
+      border-color: #ddd; }
+      #nav-wrap .mysuning-handle:hover .mysuning-child {
+        border-top: none;
+        display: block;
+        left: -1px; }
 
 /*# sourceMappingURL=index.css.map */

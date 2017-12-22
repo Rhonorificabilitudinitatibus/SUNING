@@ -1,0 +1,43 @@
+{
+	
+		"a1":{
+			"id":"a1",
+			"title":"兰雀Laciate 全脂纯牛奶 1L*12盒整箱 波兰进口 3.2%脂肪含量",
+			"price":"88.90",
+			"discount":"149.00",
+			"img":"img/index-pic/qiang1.jpg",
+			"buy":"16%"
+		},
+		"a2":{
+			"id":"a2",
+			"title":"【苏宁易购超市】尼雅（NIYA）新疆产区清凉甜白葡萄酒375ml单支",
+			"price":"39.00",
+			"discount":"68.00",
+			"img":"img/index-pic/qiang2.jpg",
+			"buy":"30%"
+		},
+		"a3":{
+			"id":"a3",
+			"title":"蓝漂(Lampure)纯竹工坊抽纸卫生纸巾3层100抽*8包",
+			"price":"10.50",
+			"discount":"11.09",
+			"img":"img/index-pic/qiang3.jpg",
+			"buy":"60%"
+		},
+		"a4":{
+			"id":"a4",
+			"title":"福临门玉米清香食用调和油5L",
+			"price":"39.90",
+			"discount":"48.90",
+			"img":"img/index-pic/qiang4.jpg",
+			"buy":"90%"
+		},
+		"a5":{
+			"id":"a5",
+			"title":"十月稻田 十月稻田长粒香大米 5kg新老包装随机发货（长粒米 煲粥 煮饭 杂粮伴侣 米饭）",
+			"price":"39.00",
+			"discount":"50.00",
+			"img":"img/index-pic/qiang5.jpg",
+			"buy":"50%"
+		}
+}

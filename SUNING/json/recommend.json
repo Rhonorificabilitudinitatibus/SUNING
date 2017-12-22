@@ -1,0 +1,89 @@
+{
+    "sugGoods": [
+        {
+            "resCode": "01",
+            "sceneId": "1655",
+            "parameter": "",
+            "skus": [
+                {
+                    "catelogeId": "100859",
+                    "catelogeNm": "中外名酒",
+                    "titleNm": "Wine",
+                    "handwork": "0"
+                },
+                {
+                    "catelogeId": "100857",
+                    "catelogeNm": "宠物",
+                    "titleNm": "Pet pavilion",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100858",
+                    "catelogeNm": "个人护理",
+                    "titleNm": "Personal care",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100860",
+                    "catelogeNm": "粮油米面",
+                    "titleNm": "Grain and rice",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100861",
+                    "catelogeNm": "美妆",
+                    "titleNm": "Cosmetics",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100862",
+                    "catelogeNm": "日用家纺",
+                    "titleNm": "Household textile",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100863",
+                    "catelogeNm": "乳制品",
+                    "titleNm": "Dairy products",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100864",
+                    "catelogeNm": "水饮冲调",
+                    "titleNm": "Reconstituted drink",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100865",
+                    "catelogeNm": "苏宁生鲜",
+                    "titleNm": "Fresh",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100866",
+                    "catelogeNm": "休闲零食",
+                    "titleNm": "Snacks",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100867",
+                    "catelogeNm": "医药保健",
+                    "titleNm": "Health and Medical",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100868",
+                    "catelogeNm": "纸品清洁",
+                    "titleNm": "Paper cleaning",
+                    "handwork": "2"
+                },
+                {
+                    "catelogeId": "100869",
+                    "catelogeNm": "进口食品",
+                    "titleNm": "Imported food",
+                    "handwork": "2"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<!--<div class="c-nav">
+			<script id="scroll-nav" type="text/html">
+			</script>
+		</div>-->
+		
+		
+		
+						
+							
+							
+							<!--<dl class="clearfix dl-border">
+								<dt>
+									<a href="javascript:;">热搜排行</a>
+								</dt>
+								<dd>
+									<a href="javascript:;" class="hot">新鲜水果</a>
+									<a href="javascript:;">海鲜水产</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;" class="hot">大闸蟹</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+								</dd>
+							</dl>
+							
+							
+							<dl class="clearfix dl-border">
+								<dt>
+									<a href="javascript:;">热搜排行</a>
+								</dt>
+								<dd>
+									<a href="javascript:;" class="hot">新鲜水果</a>
+									<a href="javascript:;">海鲜水产</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;" class="hot">大闸蟹</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+								</dd>
+							</dl>
+							<dl class="clearfix dl-border">
+								<dt>
+									<a href="javascript:;">热搜排行</a>
+								</dt>
+								<dd>
+									<a href="javascript:;" class="hot">新鲜水果</a>
+									<a href="javascript:;">海鲜水产</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;" class="hot">大闸蟹</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+								</dd>
+							</dl>
+							<dl class="clearfix dl-border">
+								<dt>
+									<a href="javascript:;">热搜排行</a>
+								</dt>
+								<dd>
+									<a href="javascript:;" class="hot">新鲜水果</a>
+									<a href="javascript:;">海鲜水产</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;" class="hot">大闸蟹</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+								</dd>
+							</dl>
+							<dl class="clearfix dl-border">
+								<dt>
+									<a href="javascript:;">热搜排行</a>
+								</dt>
+								<dd>
+									<a href="javascript:;" class="hot">新鲜水果</a>
+									<a href="javascript:;">海鲜水产</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;" class="hot">大闸蟹</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+									<a href="javascript:;">精品肉类</a>
+								</dd>
+							</dl>
+						</div>-->
+		
+
+		<div class="first-screen">
+			<div class="c-nav-wrapper">
+				<div class="c-nav">
+					<ul class="second-list">
+
+					</ul>
+					<div class="third-list">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//			$.get("json/data.json",function(data){
+			//				var html = template("c-nav",data[index]);
+			//				$(".c-nav").html(html);
+			//			})
+
+			$(function() {
+
+				$.get("json/data1.json", function(data) {
+					var str = "";
+					for(var i = 0; i < 8; i++){
+						str += '<li class="second-item"><em class="icon iconfont">&#xe638;</em><span class="second-item-title"><a href="javascript:;">' + data.nav.fruit.title + '</a><i></i></span><span class="second-item-list"></span><div class="split-line"></div></li>';
+					}
+					$(".second-list").html(str);
+					var subStr = "";
+					for(var i = 0; i < data.nav.fruit.prop.length; i++) {
+						subStr += '<a href="javascript:;">' + data.nav.fruit.prop[i] + '</a>'
+					}
+					$(".second-item-list").html(subStr);
+					
+					$(".second-item-list").find("a:first-child").addClass("hot");
+					
+					
+				})
+
+				
+				$.get("json/data1.json",function(data){
+					console.log(data)
+					var str1 = "";
+					for(var i = 0; i < data.nav.fruit.drink.content.length;i++){
+						str1 += '<a href="javascript:;">' + data.nav.fruit.drink.content[i] + '</a>';
+					}
+//					var str1_1 = "";
+//						str1_1 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.drink.title + '</a></dt><dd>' + str1 + '</dd></dl>';
+					var str1_1 = "";
+					str1_1 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.drink.title + '</a></dt><dd>' + str1 + '</dd></dl></div>';
+					
+					var str2 = "";
+					for(var i = 0; i < data.nav.fruit.egg.content.length;i++){
+						str2 += '<a href="javascript:;">' + data.nav.fruit.egg.content[i] + '</a>';
+					}
+					var str2_2 = "";
+					str2_2 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.egg.title + '</a></dt><dd>' + str2 + '</dd></dl></div>'
+					
+					var str3 = "";
+					for(var i = 0; i < data.nav.fruit.freshfruit.content.length;i++){
+						str3 += '<a href="javascript:;">' + data.nav.fruit.freshfruit.content[i] + '</a>';
+					}
+					var str3_3 = "";
+					str3_3 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.freshfruit.title + '</a></dt><dd>' + str3 + '</dd></dl></div>'
+					
+					var str4 = "";
+					for(var i = 0; i < data.nav.fruit.hotbrand.content.length;i++){
+						str4 += '<a href="javascript:;">' + data.nav.fruit.hotbrand.content[i] + '</a>';
+					}
+					
+					var str4_4 = "";
+					str4_4 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.hotbrand.title + '</a></dt><dd>' + str4 + '</dd></dl></div>'
+					
+					
+					var str5 = "";
+					for(var i = 0; i < data.nav.fruit.hotsearch.content.length;i++){
+						str5 += '<a href="javascript:;">' + data.nav.fruit.hotsearch.content[i] + '</a>';
+					}
+					var str5_5 = "";
+					str5_5 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.hotsearch.title + '</a></dt><dd>' + str5 + '</dd></dl></div>'
+					
+					
+					var str6 = "";
+					for(var i = 0; i < data.nav.fruit.meat.content.length;i++){
+						str6 += '<a href="javascript:;">' + data.nav.fruit.meat.content[i] + '</a>';
+					}
+					var str6_6 = "";
+					str6_6 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.meat.title + '</a></dt><dd>' + str6 + '</dd></dl></div>'
+					
+					
+					var str7 = "";
+					for(var i = 0; i < data.nav.fruit.seafood.content.length;i++){
+						str7 += '<a href="javascript:;">' + data.nav.fruit.seafood.content[i] + '</a>';
+					}
+					
+					var str7_7 = "";
+					str7_7 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.seafood.title + '</a></dt><dd>' + str7 + '</dd></dl></div>'
+					
+					var str8 = "";
+					for(var i = 0; i < data.nav.fruit.vegetable.content.length;i++){
+						str8 += '<a href="javascript:;">' + data.nav.fruit.vegetable.content[i] + '</a>';
+					}
+					var str8_8 = "";
+					str8_8 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.vegetable.title + '</a></dt><dd>' + str8 + '</dd></dl></div>'
+					
+					var str = "";
+					str += str1_1 + str2_2 + str3_3 + str4_4 + str5_5 + str6_6 + str7_7 + str8_8;
+					console.log(str)
+					$(".third-list").html(str);
+					$(".third-item").show();
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				})
+
+			})
+		</script>
+	</body>
+
+</html>

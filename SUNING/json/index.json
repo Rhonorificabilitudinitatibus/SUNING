@@ -1,0 +1,170 @@
+{
+	"timeout": {
+		"a1": {
+			"id": "a1",
+			"title": "兰雀Laciate 全脂纯牛奶 1L*12盒整箱 波兰进口 3.2%脂肪含量",
+			"price": "88.90",
+			"discount": "149.00",
+			"img": "img/index-pic/qiang1.jpg",
+			"buy": "16%"
+		},
+		"a2": {
+			"id": "a2",
+			"title": "【苏宁易购超市】尼雅（NIYA）新疆产区清凉甜白葡萄酒375ml单支",
+			"price": "39.00",
+			"discount": "68.00",
+			"img": "img/index-pic/qiang2.jpg",
+			"buy": "30%"
+		},
+		"a3": {
+			"id": "a3",
+			"title": "蓝漂(Lampure)纯竹工坊抽纸卫生纸巾3层100抽*8包",
+			"price": "10.50",
+			"discount": "11.09",
+			"img": "img/index-pic/qiang3.jpg",
+			"buy": "60%"
+		},
+		"a4": {
+			"id": "a4",
+			"title": "福临门玉米清香食用调和油5L",
+			"price": "39.90",
+			"discount": "48.90",
+			"img": "img/index-pic/qiang4.jpg",
+			"buy": "90%"
+		},
+		"a5": {
+			"id": "a5",
+			"title": "十月稻田 十月稻田长粒香大米 5kg新老包装随机发货（长粒米 煲粥 煮饭 杂粮伴侣 米饭）",
+			"price": "39.00",
+			"discount": "50.00",
+			"img": "img/index-pic/qiang5.jpg",
+			"buy": "50%"
+		}
+	},
+	"tab": {
+		"medicine": {
+			"m1": {
+				"id": "m1",
+				"title": "【海外购自营】乐康片NU-LAX 西梅乐康片加强版 40片/瓶 澳洲进口 促进消化 保健品",
+				"img": "img/index-pic/m1.jpg",
+				"price": "55.00"
+			},
+			"m2": {
+				"id": "m2",
+				"title": "杞年枸杞子500g 宁夏枸杞 特级 免洗枸杞 2017新货头茬 枸杞茶饮",
+				"img": "img/index-pic/m2.jpg",
+				"price": "29.90"
+			},
+			"m3": {
+				"id": "m3",
+				"title": "鱼跃（yuwell）电子血压计 YE660A经典血压仪 家用上臂式高精准全自动智能老人测量血压仪器",
+				"img": "img/index-pic/m3.jpg",
+				"price": "139.00"
+			},
+			"m4": {
+				"id": "m4",
+				"title": "修正 钙铁锌咀嚼片60片可搭配儿童青少年成人中老年孕产妇液体补钙氨糖软骨素产品 1盒装",
+				"img": "img/index-pic/m4.jpg",
+				"price": "45.00"
+			},
+			"m5": {
+				"id": "m5",
+				"title": "善存（Centrum）小佳维片咀嚼片(香甜柠檬味) 80片 儿童 补充维生素 添加钙铁锌",
+				"img": "img/index-pic/m5.jpg",
+				"price": "122.00"
+			},
+			"m6": {
+				"id": "m6",
+				"title": "【下单立减再用劵】义和祥 绞股蓝 绞股蓝茶 绞股蓝龙须茶 80g/罐",
+				"img": "img/index-pic/m6.jpg",
+				"price": "29.00"
+			},
+			"m7": {
+				"id": "m7",
+				"title": "【官方旗舰店】养生堂天然维生素C咀嚼片70片 赠VC咀嚼片15片+睡眠面膜",
+				"img": "img/index-pic/m7.jpg",
+				"price": "97.00"
+			},
+			"m8": {
+				"id": "m8",
+				"title": "【海外购自营】Swisse奶蓟草片 120片/瓶 澳洲进口 护肝排毒 保健品",
+				"img": "img/index-pic/m8.jpg",
+				"price": "89.00"
+			},
+			"m9": {
+				"id": "m9",
+				"title": "【中宁枸杞官方旗舰店】2017年头茬新货宁夏中宁枸杞免洗红苟杞特级500克艺术文字",
+				"img": "img/index-pic/m9.jpg",
+				"price": "39.00"
+			},
+			"m10": {
+				"id": "m10",
+				"title": "欧姆龙（OMRON）电子血压计 HEM-7124 家用上臂式全自动 精准电子血压测量仪",
+				"img": "img/index-pic/m10.jpg",
+				"price": "299.00"
+			}
+		},
+		"milk": {
+			"r1": {
+				"id": "r1",
+				"title": "Arla爱氏晨曦 全脂纯牛奶1L*12盒整箱 德国进口",
+				"img": "img/index-pic/r1.jpg",
+				"price": "109.00"
+			},
+			"r2": {
+				"id": "r2",
+				"title": "【苏宁超市】君乐宝 优致牧场纯牛奶 礼盒装 1-12-250ml",
+				"img": "img/index-pic/r2.jpg",
+				"price": "29.90"
+			},
+			"r3": {
+				"id": "r3",
+				"title": "伊利 味可滋 香蕉牛奶 果味牛奶 礼盒装 12*240ml",
+				"img": "img/index-pic/r3.jpg",
+				"price": "45.00"
+			},
+			"r4": {
+				"id": "r4",
+				"title": "蒙牛高钙袋装奶粉300g",
+				"img": "img/index-pic/r4.jpg",
+				"price": "32.90"
+			},
+			"r5": {
+				"id": "r5",
+				"title": "【苏宁超市】君乐宝 君畅乳酸菌饮料 芒果味小排 1*5*100ML",
+				"img": "img/index-pic/r5.jpg",
+				"price": "49.00"
+			},
+			"r6": {
+				"id": "r6",
+				"title": "德亚（weidendort）脱脂纯牛奶200mlx30盒整箱 德国进口",
+				"img": "img/index-pic/r6.jpg",
+				"price": "89.00"
+			},
+			"r7": {
+				"id": "r7",
+				"title": "蒙牛 新养道 零乳糖 低脂型 苗条装 250ml*12 盒装",
+				"img": "img/index-pic/r7.jpg",
+				"price": "34.90"
+			},
+			"r8": {
+				"id": "r8",
+				"title": "德亚（weidendort）酸奶200mlx15盒整箱 德国进口",
+				"img": "img/index-pic/r8.jpg",
+				"price": "69.00"
+			},
+			"r9": {
+				"id": "r9",
+				"title": "光明巧克力风味250ml*24盒",
+				"img": "img/index-pic/r9.jpg",
+				"price": "64.50"
+			},
+			"r10": {
+				"id": "r10",
+				"title": "风车牧场 低脂纯牛奶1L*6盒整箱 荷兰进口",
+				"img": "img/index-pic/r10.jpg",
+				"price": "59.00"
+			}
+		}
+	}
+}

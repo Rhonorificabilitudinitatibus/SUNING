@@ -822,7 +822,7 @@ $wid:1190px;
         width: $wid;
         margin: 0 auto;
         margin-bottom: 10px;
-        &:after{
+        &:after {
             @include killfloat;
         }
         .bottom-top {
@@ -896,26 +896,26 @@ $wid:1190px;
         font-size: 14px;
         overflow: hidden;
     }
-        p {
-            line-height: 22px;
-            font-size: 12px;
+    p {
+        line-height: 22px;
+        font-size: 12px;
+        word-break: break-word;
+        width: 90px;
+        a {
             word-break: break-word;
-            width: 90px;
-           
-            a {
-                word-break: break-word;
-                color: #545454;
-                &:hover {
-                    color: #f60;
-                }
+            color: #545454;
+            &:hover {
+                color: #f60;
             }
         }
+    }
 }
+
 //底部信息
-#footer-wrap{
+#footer-wrap {
     width: 100%;
     background: #fff;
-    footer{
+    footer {
         font-size: 12px;
         margin: 0 auto;
         width: $wid;
@@ -923,8 +923,8 @@ $wid:1190px;
             text-align: center;
             line-height: 25px;
             height: 25px;
-            p{
-                a{
+            p {
+                a {
                     color: #666;
                 }
                 span {
@@ -933,7 +933,7 @@ $wid:1190px;
                 }
             }
         }
-        .copy-right{
+        .copy-right {
             height: 25px;
             line-height: 25px;
             color: #999;
@@ -943,7 +943,7 @@ $wid:1190px;
                 padding: 0 4px;
             }
         }
-        .copy-right2{
+        .copy-right2 {
             height: 25px;
             line-height: 25px;
             color: #999;
@@ -952,20 +952,21 @@ $wid:1190px;
                 color: #888;
                 padding: 0 4px;
             }
-            a{
+            a {
                 color: #999;
             }
         }
-        .footer-pic{
+        .footer-pic {
             margin-top: 5px;
             text-align: center;
-            a{
+            a {
                 display: inline-block;
                 margin-right: 8px;
             }
         }
     }
 }
+
 //侧边栏
 .sn-sidebar {
     position: fixed;
@@ -975,8 +976,8 @@ $wid:1190px;
     width: 35px;
     height: 100%;
     font-size: 12px;
-    a{
-        span{
+    a {
+        span {
             display: none;
         }
     }
@@ -989,7 +990,7 @@ $wid:1190px;
         height: 100%;
         background-color: #383838;
     }
-    .sn-sidebar-middle-tabs{
+    .sn-sidebar-middle-tabs {
         width: 35px;
         -webkit-transition: height .3s ease-in-out .1s;
     }
@@ -998,23 +999,23 @@ $wid:1190px;
         z-index: 5;
         left: 0;
     }
-    .sn-sidebar-middle-tabs-top{
+    .sn-sidebar-middle-tabs-top {
         top: 0;
     }
-    .sn-sidebar-tab-member{
+    .sn-sidebar-tab-member {
         margin-bottom: -46px;
         top: -56px;
-        &:hover{
-            .tab-icon{
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
-                background-position: -26px 0 ;
+                background-position: -26px 0;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-        .tab-icon{
+        .tab-icon {
             background-position: 0 0;
         }
     }
@@ -1024,8 +1025,7 @@ $wid:1190px;
         height: 35px;
         font-family: "Microsoft Yahei";
         cursor: pointer;
-       
-        a{
+        a {
             outline: 0;
             color: #333;
         }
@@ -1037,7 +1037,7 @@ $wid:1190px;
             z-index: 2;
             background-color: #383838;
             cursor: pointer;
-            background:#383838 url("../img/index-pic/sidebaricon.png") no-repeat;
+            background: #383838 url("../img/index-pic/sidebaricon.png") no-repeat;
         }
         .tab-icon-tip {
             display: none;
@@ -1060,10 +1060,10 @@ $wid:1190px;
             border-width: 1px 0;
             text-align: center;
             cursor: pointer;
-            &:hover{
-                background-color:#ffaa01;
-                .tab-icon-cart{
-                    background-color:#ffaa01 ;
+            &:hover {
+                background-color: #ffaa01;
+                .tab-icon-cart {
+                    background-color: #ffaa01;
                 }
             }
         }
@@ -1093,9 +1093,9 @@ $wid:1190px;
         padding: 0 3px;
         background-color: #383838;
     }
-    .sn-sidebar-tab{
-        .tab-icon-cart-tip{
-            top:50%;
+    .sn-sidebar-tab {
+        .tab-icon-cart-tip {
+            top: 50%;
         }
         .tab-icon-tip {
             display: none;
@@ -1120,38 +1120,37 @@ $wid:1190px;
             cursor: pointer;
         }
     }
-    .sn-sidebar-tab-message{
-        .tab-icon{
+    .sn-sidebar-tab-message {
+        .tab-icon {
             background-position: 0 -23px;
         }
-        span{
+        span {
             z-index: 1;
         }
-        &:hover{
-            .tab-icon{
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
                 background-position: -26px -23px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
-
+                color: #383838;
             }
         }
-//      span{
-//          transition: left 1s;
-//      }
-//      &:hover{
-//          span{
-//              
-//              display: block;
-//              background: #ffaa01;
-//              color: #383838;
-//              transform: translateX(-47px);
-//          }
-//      }
+        //      span{
+        //          transition: left 1s;
+        //      }
+        //      &:hover{
+        //          span{
+        //              
+        //              display: block;
+        //              background: #ffaa01;
+        //              color: #383838;
+        //              transform: translateX(-47px);
+        //          }
+        //      }
     }
-    .sn-sidebar-middle-tabs-bottom{
+    .sn-sidebar-middle-tabs-bottom {
         bottom: 0;
     }
     .sn-sidebar-tabs {
@@ -1159,131 +1158,131 @@ $wid:1190px;
         z-index: 5;
         left: 0;
     }
-//  .hide{
-//      display: none;
-//  }
-    .sn-sidebar-tab-finance{
-        &:hover{
-            .tab-icon{
+    //  .hide{
+    //      display: none;
+    //  }
+    .sn-sidebar-tab-finance {
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
                 background-position: -26px -47px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-        .tab-icon{
+        .tab-icon {
             background-position: 0 -47px;
         }
     }
-    .sn-sidebar-tab-history{
-        &:hover{
-            .tab-icon{
+    .sn-sidebar-tab-history {
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
                 background-position: -26px -70px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-        .tab-icon{
+        .tab-icon {
             background-position: 0 -70px;
         }
     }
-    .sn-sidebar-tab-sign{
-        &:hover{
-            .tab-icon{
+    .sn-sidebar-tab-sign {
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
                 background-position: -26px -93px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-         .tab-icon{
+        .tab-icon {
             background-position: 0 -93px;
-         }
+        }
     }
-    .sn-sidebar-bottom-tabs{
+    .sn-sidebar-bottom-tabs {
         bottom: 5px;
-        .sn-sidebar-tab{
-            .tab-tip{
+        .sn-sidebar-tab {
+            .tab-tip {
                 width: 73px;
             }
         }
     }
-    .sn-sidebar-service{
-        span{
+    .sn-sidebar-service {
+        span {
             width: 73px;
         }
-        &:hover{
-            .tab-icon{
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
                 background-position: -26px -117px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-        .tab-icon{
+        .tab-icon {
             background-position: 0 -117px;
         }
     }
-    .sn-sidebar-feedback{
-        &:hover{
-            .tab-icon{
+    .sn-sidebar-feedback {
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
                 background-position: -26px -138px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-        .tab-icon{
+        .tab-icon {
             background-position: 0 -138px;
         }
-         .tab-tip{
-             width: 73px;
-         }
+        .tab-tip {
+            width: 73px;
+        }
     }
-    .sn-sidebar-code{
-        &:hover{
-            .tab-icon{
+    .sn-sidebar-code {
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
-                background-position:-26px -163px;
+                background-position: -26px -163px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-         .tab-icon-tip {
-             top: 5px;
-             width: 7px;
-             height: 20px;
-             background-position: -38px -219px;
-         }
-         .tab-icon{
-             background-position: 0 -163px;
-         }
+        .tab-icon-tip {
+            top: 5px;
+            width: 7px;
+            height: 20px;
+            background-position: -38px -219px;
+        }
+        .tab-icon {
+            background-position: 0 -163px;
+        }
     }
-    .sn-sidebar-to-top{
-        &:hover{
-            .tab-icon{
+    .sn-sidebar-to-top {
+        &:hover {
+            .tab-icon {
                 background-color: #ffaa01;
                 background-position: -26px -186px;
             }
-            span{
+            span {
                 background: #ffaa01;
-                color:#383838;
+                color: #383838;
             }
         }
-        .tab-icon{
+        .tab-icon {
             background-position: 0 -186px;
         }
     }
@@ -1302,17 +1301,18 @@ $wid:1190px;
         background-color: #FFF;
         box-shadow: 1px 0 4px #888;
     }
-     .sn-sidebar-content {
-         display: none;
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background-color: #FFF;
-         overflow-y: auto;
-     }
+    .sn-sidebar-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+        overflow-y: auto;
+    }
 }
+
 .sn-sidebar-member-wrap {
     display: block;
     position: absolute;
@@ -1322,7 +1322,8 @@ $wid:1190px;
     z-index: 3;
     box-shadow: 1px 0 4px #888;
 }
-.member-white{
+
+.member-white {
     background: no-repeat #fff;
 }
 
@@ -1335,12 +1336,14 @@ $wid:1190px;
     height: 38px;
     overflow: visible;
 }
-.ng-nav-bar-chanel{
+
+.ng-nav-bar-chanel {
     margin-top: 0;
     .ng-nav-index {
         width: 785px;
     }
 }
+
 .ng-sort {
     margin-left: -595px;
     background: #ff9901;
@@ -1348,10 +1351,11 @@ $wid:1190px;
     width: 190px;
     top: 0;
     left: 50%;
-    span{
+    span {
         font-size: 14px;
     }
 }
+
 .ng-all-hook {
     width: 163px;
     line-height: 38px;
@@ -1378,10 +1382,11 @@ $wid:1190px;
         position: absolute;
         font-style: normal;
     }
-    span{
+    span {
         font-weight: 700;
     }
 }
+
 .ng-nav-index {
     margin-left: -405px;
     position: absolute;
@@ -1390,11 +1395,11 @@ $wid:1190px;
     height: 38px;
     line-height: 38px;
     overflow: hidden;
-    .ng-nav{
+    .ng-nav {
         li {
-            &:hover{
-                a{
-                    color:#f60 ;
+            &:hover {
+                a {
+                    color: #f60;
                 }
             }
             float: left;
@@ -1413,7 +1418,7 @@ $wid:1190px;
             }
         }
     }
-    li{
+    li {
         a {
             font-weight: normal;
             letter-spacing: 1px;
@@ -1428,6 +1433,7 @@ $wid:1190px;
         font-style: normal;
     }
 }
+
 .first-screen {
     position: relative;
     min-width: 1190px;
@@ -1456,8 +1462,8 @@ $wid:1190px;
                 height: 478px;
                 background: #ddd;
                 .second-item {
-                    &:hover{
-                        background-color:#f2f2f2 ;
+                    &:hover {
+                        background-color: #f2f2f2;
                     }
                     position: relative;
                     width: 170px;
@@ -1507,7 +1513,7 @@ $wid:1190px;
                         width: 170px;
                         height: 16px;
                         overflow: hidden;
-                        .hot{
+                        .hot {
                             color: #ff9901;
                         }
                         a {
@@ -1529,7 +1535,7 @@ $wid:1190px;
                 }
             }
             .third-list {
-                &:after{
+                &:after {
                     @include killfloat;
                 }
                 position: absolute;
@@ -1541,7 +1547,7 @@ $wid:1190px;
                     display: none;
                     position: absolute;
                     left: 0;
-//                  display: block;
+                    //                  display: block;
                     width: 715px;
                     padding: 20px 20px 40px 25px;
                     background: #fff;
@@ -1584,12 +1590,14 @@ $wid:1190px;
         }
     }
 }
-.clearfix{
+
+.clearfix {
     zoom: 1;
-    &:after{
+    &:after {
         @include killfloat;
     }
 }
+
 //中间弹出条
 .c-popBox {
     display: none;
@@ -1616,7 +1624,7 @@ $wid:1190px;
 }
 
 //轮播部分
-.first-screen{
+.first-screen {
     .banner-wrapper {
         position: absolute;
         top: 0;
@@ -1645,72 +1653,71 @@ $wid:1190px;
                 }
             }
         }
-      .left-point {
-          left: 50%;
-          margin-left: -372px;
-          i {
-              background: url("../img/index-pic/chaoshi.png") no-repeat;
-              background-position: -26px -78px;
-          }
-      }
-      .right-point {
-          right: 50%;
-          margin-right: -372px;
-          i {
-              background: url("../img/index-pic/chaoshi.png") no-repeat;
-              background-position: 0 -78px;
-          }
-      }
-      .point {
-          position: absolute;
-//        display: none;
-          top: 159px;
-          width: 24px;
-          height: 60px;
-          line-height: 60px;
-          background-color: #000;
-          text-align: center;
-          opacity: .2;
-          filter: alpha(opacity=20);
-          z-index: 100;
-          i {
-              display: inline-block;
-              width: 24px;
-              height: 60px;
-              vertical-align: middle;
-              
-          }
-      }
-      .banner-nav-wrapper {
-          position: absolute;
-          bottom: 9px;
-          width: 100%;
-          height: 10px;
-          text-align: center;
-          font-size: 0;
-          z-index: 100;
-          .banner-nav {
-              position: relative;
-              display: inline-block;
-              height: 10px;
-              padding-left: 8px;
-              border-radius: 50%;
-              a {
-                  display: inline-block;
-                  margin-right: 8px;
-                  margin-top: 2px;
-                  width: 8px;
-                  height: 8px;
-                  border-radius: 50%;
-                  background-color: #fff;
-//                opacity: .6;
-                  filter: alpha(opacity=60);
-              }
-              .current {
-                  background: #f40;
-              }
-          }
-      }
+        .left-point {
+            left: 50%;
+            margin-left: -372px;
+            i {
+                background: url("../img/index-pic/chaoshi.png") no-repeat;
+                background-position: -26px -78px;
+            }
+        }
+        .right-point {
+            right: 50%;
+            margin-right: -372px;
+            i {
+                background: url("../img/index-pic/chaoshi.png") no-repeat;
+                background-position: 0 -78px;
+            }
+        }
+        .point {
+            position: absolute;
+            //        display: none;
+            top: 159px;
+            width: 24px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #000;
+            text-align: center;
+            opacity: .2;
+            filter: alpha(opacity=20);
+            z-index: 100;
+            i {
+                display: inline-block;
+                width: 24px;
+                height: 60px;
+                vertical-align: middle;
+            }
+        }
+        .banner-nav-wrapper {
+            position: absolute;
+            bottom: 9px;
+            width: 100%;
+            height: 10px;
+            text-align: center;
+            font-size: 0;
+            z-index: 100;
+            .banner-nav {
+                position: relative;
+                display: inline-block;
+                height: 10px;
+                padding-left: 8px;
+                border-radius: 50%;
+                a {
+                    display: inline-block;
+                    margin-right: 8px;
+                    margin-top: 2px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    //                opacity: .6;
+                    filter: alpha(opacity=60);
+                }
+                .current {
+                    background: #f40;
+                }
+            }
+        }
     }
     .banner {
         overflow: hidden;
@@ -1722,7 +1729,7 @@ $wid:1190px;
         bottom: 0;
         left: 50%;
         margin-left: -402px;
-        ul{
+        ul {
             margin-right: -2px;
             li {
                 float: left;
@@ -1737,7 +1744,7 @@ $wid:1190px;
                 }
             }
         }
-        .clearfix{
+        .clearfix {
             zoom: 1;
         }
     }
@@ -1791,13 +1798,13 @@ $wid:1190px;
                 height: 229px;
                 margin: 0 auto;
                 background: url("../img/index-pic/banner2-bg.png") no-repeat;
-                    li {
+                li {
                     position: absolute;
                     top: 0;
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    a{
+                    a {
                         display: block;
                         img {
                             display: block;
@@ -1854,7 +1861,7 @@ $wid:1190px;
                         background-color: #d1a742;
                         opacity: .6;
                     }
-                    .current{
+                    .current {
                         background: #f40;
                     }
                 }
@@ -1863,7 +1870,7 @@ $wid:1190px;
         .left-point2 {
             left: 50%;
             margin-left: -119px;
-            i{
+            i {
                 background: url("../img/index-pic/chaoshi.png") no-repeat;
                 background-position: -26px -78px;
             }
@@ -1871,7 +1878,7 @@ $wid:1190px;
         .right-point2 {
             right: 50%;
             margin-right: -119px;
-            i{
+            i {
                 background: url("../img/index-pic/chaoshi.png") no-repeat;
                 background-position: 0 -78px;
             }
@@ -1897,6 +1904,7 @@ $wid:1190px;
         }
     }
 }
+
 .qiang-wrap {
     position: relative;
     width: 100%;
@@ -1904,7 +1912,8 @@ $wid:1190px;
     background: #e9e9e9;
     padding-top: 10px;
 }
-.c-scoller{
+
+.c-scoller {
     position: relative;
     width: 1190px;
     height: 338px;
@@ -1914,14 +1923,14 @@ $wid:1190px;
         margin: 0;
         background: url("../img/index-pic/chaoshi.png") no-repeat 0 -140px;
         overflow: hidden;
-        .icon{
+        .icon {
             background-position: -464px 0;
         }
         .time-panel {
             float: left;
             width: 130px;
             margin-top: 2px;
-            .time-info{
+            .time-info {
                 em {
                     font-size: 16px;
                     font-weight: bold;
@@ -1939,7 +1948,7 @@ $wid:1190px;
             color: #333;
             margin-top: 23px;
             margin-right: 12px;
-            em{
+            em {
                 font-style: normal;
             }
         }
@@ -1967,13 +1976,13 @@ $wid:1190px;
             width: 198px;
             height: 280px;
             background: #fff;
-            &:hover{
-                img{
-                   transform: scale(1.05);
+            &:hover {
+                img {
+                    transform: scale(1.05);
                 }
             }
-            a{
-                &:hover{
+            a {
+                &:hover {
                     color: #F60;
                 }
             }
@@ -2045,7 +2054,7 @@ $wid:1190px;
                         display: inline-block;
                         position: absolute;
                         height: 10px;
-                        width:17%;
+                        width: 17%;
                         left: 0;
                         top: 0;
                         background: #ff8484;
@@ -2064,6 +2073,7 @@ $wid:1190px;
         }
     }
 }
+
 .c-title {
     width: 100%;
     height: 55px;
@@ -2083,7 +2093,8 @@ $wid:1190px;
         margin-right: 10px;
     }
 }
-.c-scoller{
+
+.c-scoller {
     .pic-entry {
         position: absolute;
         width: 199px;
@@ -2097,24 +2108,24 @@ $wid:1190px;
         }
     }
 }
+
 //排行榜
 .c-rank {
     position: relative;
     width: 1190px;
     margin: 0 auto;
-    
     .c-rank-nav {
         width: 1190px;
         height: 80px;
         background: #fff;
-        ul{
+        ul {
             li {
                 float: left;
                 width: 91px;
                 height: 80px;
                 background: #ff5d5d;
-                &:hover{
-                   background:#c20000;
+                &:hover {
+                    background: #c20000;
                 }
                 .icon {
                     width: 42px;
@@ -2125,43 +2136,43 @@ $wid:1190px;
                     margin-bottom: 6px;
                     background: url("../img/index-pic/chaoshi.png") no-repeat;
                 }
-                .icon13{
+                .icon13 {
                     background-position: -228px -88px;
                 }
-                .icon9{
+                .icon9 {
                     background-position: -184px -78px;
                 }
-                .icon8{
+                .icon8 {
                     background-position: -52px -78px
                 }
-                .icon5{
+                .icon5 {
                     background-position: -272px -88px;
                 }
-                .icon11{
+                .icon11 {
                     background-position: -274px 0;
                 }
-                .icon6{
+                .icon6 {
                     background-position: -230px 0;
                 }
-                .icon12{
+                .icon12 {
                     background-position: -272px -44px;
                 }
-                .icon1{
+                .icon1 {
                     background-position: -316px -88px;
                 }
-                .icon10{
+                .icon10 {
                     background-position: -96px -78px;
                 }
-                .icon7{
+                .icon7 {
                     background-position: -228px -44px;
                 }
                 .icon2 {
                     background-position: -140px -78px;
                 }
-                .icon4{
+                .icon4 {
                     background-position: -186px 0;
                 }
-                .icon3{
+                .icon3 {
                     background-position: -316px -44px;
                 }
                 .name {
@@ -2175,13 +2186,14 @@ $wid:1190px;
             }
         }
     }
-    .c-title{
-        .icon{
-        background-position: -438px -104px;
+    .c-title {
+        .icon {
+            background-position: -438px -104px;
         }
     }
 }
-.c-title{
+
+.c-title {
     width: 100%;
     height: 55px;
     line-height: 55px;
@@ -2198,5 +2210,209 @@ $wid:1190px;
             margin-top: 17px;
             margin-right: 10px;
         }
+    }
+}
+
+.c-rank {
+    .c-rank-cont {
+        height: 640px;
+        background: #eee;
+        .clearfix {
+            &:after {
+                @include killfloat;
+            }
+        }
+        ul {
+            li {
+                float: left;
+                position: relative;
+                width: 237px;
+                height: 319px;
+                margin-right: 1px;
+                margin-bottom: 1px;
+                background: #fff;
+                overflow: hidden;
+                &:hover {
+                    img {
+                        transform: scale(1.05);
+                    }
+                    .name {
+                        color: #f60;
+                    }
+                }
+                img {
+                    display: block;
+                    width: 190px;
+                    height: 190px;
+                    margin: 20px 24px;
+                    -webkit-transition: -webkit-transform .5s;
+                    transition: -webkit-transform .5s;
+                    transition: transform .5s;
+                }
+                .name {
+                    width: 206px;
+                    height: 32px;
+                    font: 12px/16px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    margin-left: 20px;
+                    margin-bottom: 14px;
+                }
+                .price {
+                    font: 10px/21px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+                    color: #f40;
+                    margin-left: 20px;
+                    em {
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-style: normal;
+                    }
+                }
+                .cartBtn {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    right: 20px;
+                    bottom: 18px;
+                    cursor: pointer;
+                    background: url("../img/index-pic/chaoshi.png") no-repeat -1545px 0;
+                }
+                .prize {
+                    position: absolute;
+                    display: none;
+                    right: 15px;
+                    top: 17px;
+                    width: 32px;
+                    height: 43px;
+                    background: url("../img/index-pic/chaoshi.png") no-repeat;
+                }
+            }
+            .first {
+                .prize {
+                    display: block;
+                    background-position: -1192px -132px;
+                }
+            }
+            .second {
+                .prize {
+                    display: block;
+                    background-position: -1230px -132px;
+                }
+            }
+            .third {
+                .prize {
+                    display: block;
+                    background-position: -1268px -132px;
+                }
+            }
+        }
+    }
+}
+
+.c-mid-entry {
+    margin: 20px auto;
+    width: 1190px;
+    height: 120px;
+}
+
+.c-two-col {
+    position: relative;
+    width: 1190px;
+    margin: 20px auto 1px;
+    .col {
+        float: left;
+        width: 595px;
+        ul {
+            margin-right: -1px;
+            .lg {
+                height: 380px;
+            }
+            li {
+                float: left;
+                width: 298px;
+                height: 190px;
+                background: #ddd;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
+
+.clearfix {
+    zoom: 1;
+    &:after {
+        @include killfloat;
+    }
+}
+
+body {
+    background: #eee;
+}
+
+.float-bar {
+    position: relative;
+    width: 1159px;
+    height: 19px;
+    left: 50%;
+    margin-left: -595px;
+    padding: 19px 19px 22px 12px;
+    background: #fff;
+    .float-title {
+        float: left;
+        height: 19px;
+        line-height: 19px;
+        font-size: 14px;
+        color: #f40;
+        margin-right: 15px;
+        em {
+            position: absolute;
+            display: inline-block;
+            width: 1px;
+            height: 15px;
+            background: #ddd;
+            left: 79px;
+            top: 22px;
+            font-style: normal;
+        }
+    }
+    ul {
+        width: 100%;
+        background: #fff;
+        li {
+            float: left;
+            width: 68px;
+            height: 19px;
+            line-height: 19px;
+            text-align: center;
+            cursor: pointer;
+            margin-right: 11px;
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+    }
+    .on {
+        position: relative;
+        width: 68px;
+        border-radius: 2px;
+        background: #f40;
+        a {
+            color: #fff;
+        }
+    }
+    .backTop{
+            display: block;
+    position: absolute;
+    right: 19px;
+    top: 24px;
+    width: 32px;
+    height: 11px;
+    background: url("../img/index-pic/chaoshi.png") -1192px -181px;
     }
 }

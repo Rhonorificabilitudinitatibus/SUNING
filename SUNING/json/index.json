@@ -166,5 +166,184 @@
 				"price": "59.00"
 			}
 		}
+	},
+	"floor":{
+		"sx":{
+			"prop":["新鲜水果","精品肉类","海鲜水产","安心禽蛋","速食乳饮","时令鲜蔬"],
+			"leftimg":"img/index-pic/s0.jpg",
+			"rightimg":{
+				"s1":{
+					"id":"s1",
+					"title":"【兴山馆】宜昌秭归脐橙 新鲜水果橙子5斤装 新鲜上市 【中华特色馆】",
+					"img":"img/index-pic/s1.jpg",
+					"price":"25.80"
+				},
+				"s2":{
+					"id":"s2",
+					"title":"【苏宁生鲜】安井奶黄包 360g 方便速食 包子",
+					"img":"img/index-pic/s2.jpg",
+					"price":"6.50"
+				},
+				"s3":{
+					"id":"s3",
+					"title":"怡鲜来 越南新冷冻黑虎虾约500g/盒 10-16尾 草虾 斑节虾",
+					"img":"img/index-pic/s3.jpg",
+					"price":"39.80"
+				},
+				"s4":{
+					"id":"s4",
+					"title":"【中华特色】大连馆 乐世小厨 手抓饼面饼2250g 25片桶装 原味",
+					"img":"img/index-pic/s4.jpg",
+					"price":"69.80"
+				},
+				"s5":{
+					"id":"s5",
+					"title":"【烟台馆】正宗烟台红富士75mm果径 12颗 4.2~4.5斤/箱 【中华特色馆】",
+					"img":"img/index-pic/s5.jpg",
+					"price":"36.80"
+				},
+				"s6":{
+					"id":"s6",
+					"title":"【中华特色】东港馆 丹东99草莓3斤 新鲜丹东牛奶油草莓 顺丰包邮国产生鲜食品盒装水果 冷藏国产浆果类/核果类",
+					"img":"img/index-pic/s6.jpg",
+					"price":"158.00"
+				},
+				"s7":{
+					"id":"s7",
+					"title":"联豪 进口黄油粒 煎牛排需要 牛排伴侣",
+					"img":"img/index-pic/s7.jpg",
+					"price":"1.20"
+				},
+				"s8":{
+					"id":"s8",
+					"title":"【苏宁生鲜】 优质精选西餐鸭胸200g 安心禽蛋 鸭肉 国产",
+					"img":"img/index-pic/s8.jpg",
+					"price":"7.50"
+				},
+				"s9":{
+					"id":"s9",
+					"title":"怡鲜来 越南进口冷冻巴沙鱼柳400-500g 袋装 相似于龙利鱼柳 肉厚无刺 火锅食材",
+					"img":"img/index-pic/s9.jpg",
+					"price":"15.80"
+				},
+				"s10":{
+					"id":"s10",
+					"title":"重庆梁平柚小号 约600g/个",
+					"img":"img/index-pic/s10.jpg",
+					"price":"2.80"
+				}
+			}
+			
+		},
+		"mj":{
+			"prop":["新鲜水果","精品肉类","海鲜水产","安心禽蛋","速食乳饮","时令鲜蔬"],
+			"leftimg":"img/index-pic/j0.jpg",
+			"rightimg":{
+				"j4":{
+					"id":"j4",
+					"title":"郎酒 郎牌特曲T6 浓香型白酒 42度 500毫升",
+					"img":"img/index-pic/j4.jpg",
+					"price":"118.00"
+				},
+				"j5":{
+					"id":"j5",
+					"title":"山图红酒法国波尔多AOP级原瓶进口干红葡萄酒TU398 750ml*1瓶装",
+					"img":"img/index-pic/j5.jpg",
+					"price":"398.00"
+				},
+				"j6":{
+					"id":"j6",
+					"title":"【满2件发顺丰】法莱雅F06法国红酒科比埃AOC原瓶进口红酒葡萄酒干红整箱装750ml*6支",
+					"img":"img/index-pic/j6.jpg",
+					"price":"398.00"
+				},
+				"j7":{
+					"id":"j7",
+					"title":"中粮我买网 燕京啤酒（箱装 330ml*24）",
+					"img":"img/index-pic/j7.jpg",
+					"price":"59.90"
+				},
+				"j8":{
+					"id":"j8",
+					"title":"和酒黄酒上海老酒金色年华五年陈5年黄酒整箱500ml*12瓶惠",
+					"img":"img/index-pic/j8.jpg",
+					"price":"250.00"
+				},
+				"j9":{
+					"id":"j9",
+					"title":"Hoegaarden/福佳 白啤酒 330ml*24瓶",
+					"img":"img/index-pic/j9.jpg",
+					"price":"149.00"
+				}
+			}
+			
+		},
+		"sp":{
+			"prop":["新鲜水果","精品肉类","海鲜水产","安心禽蛋","速食乳饮","时令鲜蔬"],
+			"leftimg":"img/index-pic/p0.jpg",
+			"rightimg":{
+				"p1":{
+					"id":"p1",
+					"title":"【中粮我买网】欧德堡超高温处理全脂纯牛奶200ml",
+					"img":"img/index-pic/p1.jpg",
+					"price":"6.80"
+				},
+				"p2":{
+					"id":"p2",
+					"title":"口口(KO-KO)泰国茉莉香米 泰米 泰国大米5KG",
+					"img":"img/index-pic/p2.jpg",
+					"price":"89.90"
+				},
+				"p3":{
+					"id":"p3",
+					"title":"七咔呢(7coin)方便面冬荫功味杯面70g/杯 泰国原装进口",
+					"img":"img/index-pic/p3.jpg",
+					"price":"7.00"
+				},
+				"p4":{
+					"id":"p4",
+					"title":"山图红酒法国波尔多AOP级原瓶进口干红葡萄酒TU398 750ml*1瓶装",
+					"img":"img/index-pic/p4.jpg",
+					"price":"398.00"
+				},
+				"p5":{
+					"id":"p5",
+					"title":"利葡（Lipo）面包干椰子味300g",
+					"img":"img/index-pic/p5.jpg",
+					"price":"19.90"
+				},
+				"p6":{
+					"id":"p6",
+					"title":"越南百香果 2斤 新鲜热带水果 进口生鲜食品百香果鸡蛋果",
+					"img":"img/index-pic/p6.jpg",
+					"price":"42.00"
+				},
+				"p7":{
+					"id":"p7",
+					"title":"九日牌迷你海苔组合装16g*3包",
+					"img":"img/index-pic/p7.jpg",
+					"price":"33.90"
+				},
+				"p8":{
+					"id":"p8",
+					"title":"【中粮我买网】上质脱脂纯牛奶200ml（德国原装进口 盒）",
+					"img":"img/index-pic/p8.jpg",
+					"price":"8.00"
+				},
+				"p9":{
+					"id":"p9",
+					"title":"VOSS 芙丝饮用天然泉水（不含气）ST 500 ml 塑料瓶装 挪威进口饮用水",
+					"img":"img/index-pic/p9.jpg",
+					"price":"13.90"
+				},
+				"p10":{
+					"id":"p10",
+					"title":"亚发（Ah Huat） 特浓白咖啡320g（8条*40g）/袋 马来西亚原装进口 速溶咖啡 饮料",
+					"img":"img/index-pic/p10.jpg",
+					"price":"39.00"
+				}
+			}
+			
+		}
 	}
 }

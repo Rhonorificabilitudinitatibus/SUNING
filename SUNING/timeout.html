@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>倒计时</title>
+	</head>
+
+	<body>
+		<div class="colockbox" id="colockbox1">
+			<span class="day">00</span>
+			<span class="hour">00</span>
+			<span class="minute">00</span>
+			<span class="second">00</span>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(function() {
+					countDown("2017/12/23 18:51:00", "#colockbox1");
+				});
+
+				function countDown(time, id) {
+					var day_elem = $(id).find('.day');
+					var hour_elem = $(id).find('.hour');
+					var minute_elem = $(id).find('.minute');
+					var second_elem = $(id).find('.second');
+
+					//if(typeof end_time == "string") 
+					var end_time = new Date(time).getTime(), //月份是实际月份-1 
+						sys_second = (end_time - new Date().getTime()) / 1000;
+					var timer = setInterval(function() {
+						if(sys_second > 1) {
+							sys_second -= 1;
+							var day = Math.floor((sys_second / 3600) / 24);
+							var hour = Math.floor((sys_second / 3600) % 24);
+							var minute = Math.floor((sys_second / 60) % 60);
+							var second = Math.floor(sys_second % 60);
+							day_elem && $(day_elem).text(day); //计算天 
+							$(hour_elem).text(hour < 10 ? "0" + hour : hour); //计算小时 
+							$(minute_elem).text(minute < 10 ? "0" + minute : minute); //计算分钟 
+							$(second_elem).text(second < 10 ? "0" + second : second); //计算秒杀 
+						} else {
+							clearInterval(timer);
+						}
+					}, 1000);
+				}
+			})
+		</script>
+	</body>
+
+</html>

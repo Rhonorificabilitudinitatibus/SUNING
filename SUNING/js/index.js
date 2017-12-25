@@ -432,7 +432,6 @@ $(function() {
 	//		medicine栏
 
 	$.get("json/index.json", function(data) {
-		console.log(data.tab.medicine)
 		var _data = data;
 		var data = _data.tab.medicine;
 		var str = "";
@@ -473,10 +472,129 @@ $(function() {
 		})
 
 	})
-	
+
 	//楼层
-	$(".float-bar .list li").mouseenter(function(){
+	$(".float-bar .list li").mouseenter(function() {
 		var index = $(this).index();
-		console.log(index)
+		$(this).addClass("on").siblings().removeClass("on");
 	})
+	$(".saoma").mouseenter(function() {
+		$(this).find(".box").show();
+	})
+	$(".saoma").mouseleave(function() {
+		$(this).find(".box").hide();
+	})
+	//水果生鲜
+	$.get("json/index.json", function(data) {
+		var str1 = "";
+		for(var i = 0; i < data.floor.sx.prop.length; i++) {
+			str1 += '<li class="cur"><a href="javascript:;">' + data.floor.sx.prop[i] + '</a></li>'
+		}
+		$(".col1 .c-cards .clearfix").html(str1);
+		var str2 = "";
+		var data = data.floor.sx.rightimg;
+		for(var j in data) {
+			str2 += '<li><a href="###"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
+		}
+		$(".col2 .clearfix").html(str2);
+	})
+
+	//中外名酒
+	$.get("json/index.json", function(data) {
+		var str = "";
+		var data = data.floor.mj.rightimg;
+		for(var j in data) {
+			str += '<li><a href="###"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
+		}
+		$(".c-comm-floor2 .col2 .clearfix").html(str);
+	})
+	//进口食品
+	$.get("json/index.json", function(data) {
+		var str = "";
+		var data = data.floor.sp.rightimg;
+		for(var j in data) {
+			str += '<li><a href="###"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
+		}
+		$(".col2").eq(2).find(".clearfix").html(str);
+		$(".col2").eq(4).find(".clearfix").html(str);
+		$(".col2").eq(6).find(".clearfix").html(str);
+		$(".col2").eq(8).find(".clearfix").html(str);
+		$(".col2").eq(10).find(".clearfix").html(str);
+		$(".col2").eq(12).find(".clearfix").html(str);
+	})
+	console.log($(".main-floor").length);
+	$(window).scroll(function() {
+		var _top = $(window).scrollTop();
+//		console.log($(window).scrollTop())
+		if(_top >= 3000) {
+			$("#comm_floatBar").css({
+				"position": "fixed",
+				"top": 0,
+				"z-index": 55555
+			});
+		} else {
+			$("#comm_floatBar").css({
+				"position": "relative",
+				"top": 0,
+				"z-index": 55555
+			})
+		}
+		//滚动显示当前楼层
+		$(".main-floor").each(function(index){
+			var _top = $(this).offset().top - $(this).height()/2;
+			if($(window).scrollTop()>=_top){
+				$("#comm_floatBar").find("li").eq(index).addClass("on").siblings().removeClass("on");
+			}
+		})
+	})
+	//点击回到对应楼层
+	$("#comm_floatBar").find("li").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		var _index = $(this).index();
+		var _top = $(".main-floor").eq(_index).offset().top;
+		console.log(_index);
+		$("html,body").animate({"scrollTop":_top},500)
+	})
+	//单击返回顶部
+	$("#goTop").click(function() {
+		$("html").animate({
+			"scrollTop": 0
+		}, 1000)
+	})
+	$(".tab-icon-to-top").click(function() {
+		$("html").animate({
+			"scrollTop": 0
+		}, 1000)
+	})
+	$(".tab-tip-wider").click(function() {
+		$("html").animate({
+			"scrollTop": 0
+		}, 1000)
+	})
+	//网站倒计时
+	function countDown(time, name) {
+		//		var oDay = $(class).find(".day");
+		var oHour = $(name).find(".hour");
+		var oMinute = $(name).find(".min");
+		var oSecond = $(name).find(".sec");
+		var endTime = new Date(time).getTime();
+		var leftSec = (endTime - new Date().getTime()) / 1000;
+		var timer = setInterval(function() {
+			if(leftSec > 1) {
+				leftSec--;
+				var day = Math.floor((leftSec / 3600) / 24);
+				var hour = Math.floor((leftSec / 3600) % 24);
+				var minute = Math.floor((leftSec / 60) % 60);
+				var second = Math.floor(leftSec % 60);
+				$(oHour).text(hour < 10 ? "0" + hour : hour);
+				$(oMinute).text(minute < 10 ? "0" + minute : minute);
+				$(oSecond).text(second < 10 ? "0" + second : second);
+			}else{
+				clearInterval(timer);
+			}
+		},1000);
+	}
+	
+		countDown("2017/12/25 18:51:00",".time-info")
+
 })

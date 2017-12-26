@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			$(function() {
+				$.ajax({
+					type: "get",
+					url: "json/index.json",
+					async: true,
+					dataType: "json",
+					success: function(data) {
+						var data = data.timeout
+						console.log(data.a1)
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>

@@ -15,189 +15,6 @@ $(function() {
 	$(".ng-site-nav-box").mouseleave(function() {
 		$(".ng-sn-site-nav").slideUp(300);
 	})
-
-	//		$(".service-handle").mouseenter(function(){
-	//			$(".shop-center-child").slideDown(300);
-	//		})
-	//		$(".service-handle").mouseleave(function(){
-	//			$(".shop-center-child").slideUp(300);
-	//		})
-	//		
-	//		$(".shop-handle").mouseenter(function(){
-	//			$(".service-center-child").slideDown(300);
-	//		})
-	//		$(".shop-handle").mouseleave(function(){
-	//			$(".service-center-child").slideUp(300);
-	//		})
-
-	//控制搜索框内的东西
-	$(".search-keyword").focus(function() {
-		$(".search-keyword").val("");
-	});
-	$('.search-keyword').bind('input propertychange', function() {
-		//  $('#result').html($(this).val().length + ' characters');  
-		var txt = $(this).val();
-		$(this).css("color", "#000");
-		$(".rec-results").show();
-		$.ajax({
-			type: "get",
-			url: "http://rec.mogujie.com/jsonp/recommend/1?callback=?&pid=17721&p_keyWord=" + txt,
-			async: true,
-			dataType: "jsonp",
-			success: function(data) {
-				var str = "<i class='b-close'>×</i>";
-				for(var i = 0; i < data.data.data.length; i++) {
-					str += "<li><a href='###'>" + data.data.data[i].tag + "</a></li>";
-					$(".rec-results").html(str);
-				}
-				$(".rec-results").find(".b-close").click(function() {
-					$(".rec-results").hide();
-				})
-				$(document).on('click', function(e) {
-					var _con = $('.rec-results');
-					if(!_con.is(e.target) && _con.has(e.target).length === 0) {
-						$('.rec-results').css('display', 'none');
-					}
-				})
-				$(".rec-results").click(function(e) {
-					if(e.target.nodeName.toUpperCase() == "LI" || e.target.nodeName.toUpperCase() == "A") {
-						$(".search-keyword").val($(e.target).text())
-					}
-				})
-			},
-			error: function(data) {
-				console.log(data, data.status);
-			}
-		});
-	});
-	$(".search-keyword").blur(function() {
-		if($(this).val() == "") {
-			$(".search-keyword").val("圣诞寻礼 满199减50");
-			$(this).css("color", "#bbb");
-		}
-	});
-	//控制侧边栏
-	//信息栏
-	$(".sn-sidebar-tab-message").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-47px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-	//理财栏
-	$(".sn-sidebar-tab-finance").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-47px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-	//足迹
-	$(".sn-sidebar-tab-history").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-47px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-	//签到
-	$(".sn-sidebar-tab-sign").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-47px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-
-	//在线咨询
-	$(".sn-sidebar-service").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-73px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-
-	//意见反馈
-	$(".sn-sidebar-feedback").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-73px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-
-	//二维码
-	$(".sn-sidebar-code").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-73px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-
-	//返回顶部
-	$(".sn-sidebar-to-top").mouseenter(function() {
-		$(this).find("span").show().stop().animate({
-			"left": "-73px"
-		}, 500)
-	}).mouseleave(function() {
-		$(this).find("span").stop().animate({
-			"left": "0px"
-		}, 500, function() {
-			$(this).hide();
-		})
-	})
-
-	//横向导航滑动
-	//$(".second-item").hover(function(){
-	//	$(".third-item").hide();
-	//},function(){
-	//	$(".third-item").show();
-	//})
-	//$(".second-item").each(function(index){
-	//	$(".third-item").eq(index).show();
-	//})
-
-	/*var len = $(".second-item").length;
-	console.log(len)
-	for(let i = 0; i < len; i++){
-		$(".second-item").eq(i).hover(function(){
-			console.log(i)
-			$(".third-item").eq(i).show();
-		},function(){
-			$(".third-item").eq(i).hide();
-		})
-	}*/
 	$(".second-list").on("mouseenter", "li", function() {
 		var index = $(this).index();
 		$(".third-item").eq(index).show();
@@ -234,8 +51,6 @@ $(function() {
 		for(var i = 0; i < data.nav.fruit.drink.content.length; i++) {
 			str1 += '<a href="javascript:;">' + data.nav.fruit.drink.content[i] + '</a>';
 		}
-		//					var str1_1 = "";
-		//						str1_1 += '<div class="third-item"><dl class="clearfix dl-border"><dt><a href="javascript:;">'+ data.nav.fruit.drink.title + '</a></dt><dd>' + str1 + '</dd></dl>';
 		var str1_1 = "";
 		str1_1 += '<dl class="clearfix dl-border"><dt><a href="javascript:;">' + data.nav.fruit.drink.title + '</a></dt><dd>' + str1 + '</dd></dl>';
 
@@ -328,7 +143,7 @@ $(function() {
 
 			$(".banner").find("li").eq(index).fadeIn("slow").siblings().fadeOut("slow");
 			$(".banner-nav").find(".page-item").eq(index).addClass("current").siblings().removeClass("current");
-		}, 2000)
+		}, 3000)
 
 	}
 	move();
@@ -361,7 +176,6 @@ $(function() {
 		if(index == -1) {
 			index = 4;
 		}
-		console.log(index)
 		$(".banner").find("li").eq(index).fadeIn("slow").siblings().fadeOut("slow");
 		$(".banner-nav").find(".page-item").eq(index).addClass("current").siblings().removeClass("current");
 	})
@@ -423,20 +237,19 @@ $(function() {
 		var str = "";
 		var data = data.timeout;
 		for(var i in data) {
-			str += '<li><a href="javascript:;"><img src=' + data[i].img + '><p class="name">' + data[i].title + '</p><p class="price">¥<em>' + data[i].price + '</em></p><p class="price-high">参考价: &nbsp;<span>¥</span><em>' + data[i].discount + '</em></p><p class="progress">已抢购<em>' + data[i].buy + '</em><span><i style=width:' + data[i].buy + '></i></span></p></a><a class="cartBtn"></a></li>';
+			str += '<li><a href="detail.html?id='+ i +'"><img src=' + data[i].img + '><p class ="name">' + data[i].title + '</p><p class="price">¥<em>' + data[i].price + '</em></p><p class="price-high">参考价: &nbsp;<span>¥</span><em>' + data[i].discount + '</em></p><p class="progress">已抢购<em>' + data[i].buy + '</em><span><i style=width:' + data[i].buy + '></i></span></p></a><a class="cartBtn"></a></li>';
 		}
 		$(".c-scoller").find("ul").html(str);
 	})
 
 	//tab切换
 	//		medicine栏
-
 	$.get("json/index.json", function(data) {
 		var _data = data;
 		var data = _data.tab.medicine;
 		var str = "";
 		for(var i in data) {
-			str += '<li><a href="###"><img src="' + data[i].img + '"/><p class="name">' + data[i].title + '</p><p class="price">¥&nbsp;<em>' + data[i].price + '</em></p></a><a href="###" class="cartBtn"></a><p class="prize"></p></li>';
+			str += '<li><a href="detail.html?id='+ i +'"><img src="' + data[i].img + '"/><p class="name">' + data[i].title + '</p><p class="price">¥&nbsp;<em>' + data[i].price + '</em></p></a><a href="###" class="cartBtn"></a><p class="prize"></p></li>';
 		}
 
 		$(".c-rank-cont .clearfix").html(str);
@@ -445,11 +258,12 @@ $(function() {
 		$(".c-rank-cont .clearfix").find("li").eq(2).addClass("third");
 		$(".c-rank-nav ul li").mouseenter(function() {
 			var index = $(this).index();
+			$(this).addClass("hover").siblings().removeClass("hover");
 			if(index % 2 == 0) {
 				var data = _data.tab.medicine;
 				var str = "";
 				for(var i in data) {
-					str += '<li><a href="###"><img src="' + data[i].img + '"/><p class="name">' + data[i].title + '</p><p class="price">¥&nbsp;<em>' + data[i].price + '</em></p></a><a href="###" class="cartBtn"></a><p class="prize"></p></li>';
+					str += '<li><a href="detail.html?id='+ i +'"><img src="' + data[i].img + '"/><p class="name">' + data[i].title + '</p><p class="price">¥&nbsp;<em>' + data[i].price + '</em></p></a><a href="###" class="cartBtn"></a><p class="prize"></p></li>';
 				}
 
 				$(".c-rank-cont .clearfix").html(str);
@@ -460,7 +274,7 @@ $(function() {
 				var data = _data.tab.milk;
 				var str = "";
 				for(var i in data) {
-					str += '<li><a href="###"><img src="' + data[i].img + '"/><p class="name">' + data[i].title + '</p><p class="price">¥&nbsp;<em>' + data[i].price + '</em></p></a><a href="###" class="cartBtn"></a><p class="prize"></p></li>';
+					str += '<li><a href="detail.html?id='+ i +'"><img src="' + data[i].img + '"/><p class="name">' + data[i].title + '</p><p class="price">¥&nbsp;<em>' + data[i].price + '</em></p></a><a href="###" class="cartBtn"></a><p class="prize"></p></li>';
 				}
 
 				$(".c-rank-cont .clearfix").html(str);
@@ -494,7 +308,7 @@ $(function() {
 		var str2 = "";
 		var data = data.floor.sx.rightimg;
 		for(var j in data) {
-			str2 += '<li><a href="###"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
+			str2 += '<li><a href="detail.html?id='+ j +'"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
 		}
 		$(".col2 .clearfix").html(str2);
 	})
@@ -504,7 +318,7 @@ $(function() {
 		var str = "";
 		var data = data.floor.mj.rightimg;
 		for(var j in data) {
-			str += '<li><a href="###"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
+			str += '<li><a href="detail.html?id=' + j + '"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
 		}
 		$(".c-comm-floor2 .col2 .clearfix").html(str);
 	})
@@ -513,7 +327,7 @@ $(function() {
 		var str = "";
 		var data = data.floor.sp.rightimg;
 		for(var j in data) {
-			str += '<li><a href="###"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
+			str += '<li><a href="detail.html?id=' + j + '"><img src="' + data[j].img + '"/><p class="name">' + data[j].title + '</p><p class="price">¥&nbsp;<em>' + data[j].price + '</em></p></a><a href="###" class="cartBtn"></a></li>';
 		}
 		$(".col2").eq(2).find(".clearfix").html(str);
 		$(".col2").eq(4).find(".clearfix").html(str);
@@ -522,54 +336,72 @@ $(function() {
 		$(".col2").eq(10).find(".clearfix").html(str);
 		$(".col2").eq(12).find(".clearfix").html(str);
 	})
-	console.log($(".main-floor").length);
-	$(window).scroll(function() {
-		var _top = $(window).scrollTop();
-//		console.log($(window).scrollTop())
-		if(_top >= 3000) {
-			$("#comm_floatBar").css({
-				"position": "fixed",
-				"top": 0,
-				"z-index": 55555
-			});
-		} else {
-			$("#comm_floatBar").css({
-				"position": "relative",
-				"top": 0,
-				"z-index": 55555
-			})
-		}
-		//滚动显示当前楼层
-		$(".main-floor").each(function(index){
-			var _top = $(this).offset().top - $(this).height()/2;
-			if($(window).scrollTop()>=_top){
-				$("#comm_floatBar").find("li").eq(index).addClass("on").siblings().removeClass("on");
+	var flag = true;
+
+		$(window).scroll(function() {
+	
+	if(flag) {		var _top = $(window).scrollTop();
+			//		console.log($(window).scrollTop())
+			if(_top >= 3000) {
+				$("#comm_floatBar").css({
+					"position": "fixed",
+					"top": 0,
+					"z-index": 55555
+				});
+			} else {
+				$("#comm_floatBar").css({
+					"position": "relative",
+					"top": 0,
+					"z-index": 55555
+				})
 			}
+			//滚动显示当前楼层
+			$(".main-floor").each(function(index) {
+				var _top = $(this).offset().top - $(this).height() / 2;
+				if($(window).scrollTop() >= _top) {
+					$("#comm_floatBar").find("li").eq(index).addClass("on").siblings().removeClass("on");
+				}
+			})
+	}
 		})
-	})
+
 	//点击回到对应楼层
-	$("#comm_floatBar").find("li").click(function(){
+	$("#comm_floatBar").find("li").click(function() {
+		flag = false;
 		$(this).addClass("on").siblings().removeClass("on");
 		var _index = $(this).index();
-		var _top = $(".main-floor").eq(_index).offset().top;
-		console.log(_index);
-		$("html,body").animate({"scrollTop":_top},500)
+		var _top = $(".main-floor").eq(_index).offset().top - $(".c-title").height();
+		$("html,body").animate({
+			"scrollTop": _top
+		}, 500,function(){
+			flag = true;
+		})
 	})
 	//单击返回顶部
 	$("#goTop").click(function() {
-		$("html").animate({
+		flag = false;
+		$("html").css({"position": "relative","top": 0,"z-index": 55555}).animate({
 			"scrollTop": 0
-		}, 1000)
+		}, 1000,function(){
+			flag = true;
+		})
 	})
 	$(".tab-icon-to-top").click(function() {
-		$("html").animate({
+		flag = false;
+		$("html").css({"position": "relative","top": 0,"z-index": 55555}).animate({
 			"scrollTop": 0
-		}, 1000)
+		}, 1000,function(){
+			flag = true;
+		})
 	})
 	$(".tab-tip-wider").click(function() {
-		$("html").animate({
+		flag = false;
+		
+		$("html").css({"position": "relative","top": 0,"z-index": 55555}).animate({
 			"scrollTop": 0
-		}, 1000)
+		}, 1000,function(){
+			flag = true;
+		})
 	})
 	//网站倒计时
 	function countDown(time, name) {
@@ -589,12 +421,12 @@ $(function() {
 				$(oHour).text(hour < 10 ? "0" + hour : hour);
 				$(oMinute).text(minute < 10 ? "0" + minute : minute);
 				$(oSecond).text(second < 10 ? "0" + second : second);
-			}else{
+			} else {
 				clearInterval(timer);
 			}
-		},1000);
+		}, 1000);
 	}
-	
-		countDown("2017/12/25 18:51:00",".time-info")
+
+	countDown("2017/12/26 9:20:00", ".time-info")
 
 })

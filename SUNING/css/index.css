@@ -64,63 +64,6 @@ input,
 a {
   outline: none; }
 
-#top_wrapper {
-  width: 100%; }
-  #top_wrapper .top-active-img {
-    background: #590208;
-    width: 100%; }
-    #top_wrapper .top-active-img img {
-      margin: 0 auto; }
-  #top_wrapper .b-close {
-    position: absolute;
-    top: 3px;
-    right: 42px;
-    width: 16px;
-    height: 16px;
-    color: #fff;
-    overflow: hidden; }
-    #top_wrapper .b-close i {
-      font-style: normal;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 16px;
-      cursor: pointer; }
-    #top_wrapper .b-close .bg {
-      z-index: 1;
-      background: #000;
-      opacity: .3; }
-    #top_wrapper .b-close .text {
-      z-index: 2;
-      font: 16px/16px simsun;
-      text-align: center; }
-  #top_wrapper .b-open {
-    display: none;
-    position: absolute;
-    top: 3px;
-    right: 42px;
-    width: 16px;
-    height: 16px;
-    color: #fff;
-    overflow: hidden; }
-    #top_wrapper .b-open i {
-      font-style: normal;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 16px;
-      cursor: pointer; }
-    #top_wrapper .b-open .bg {
-      z-index: 1;
-      background: #000;
-      opacity: .3; }
-    #top_wrapper .b-open .text {
-      z-index: 2;
-      font: 16px/16px simsun;
-      text-align: center; }
-
 #nav-wrap {
   position: relative;
   width: 100%;
@@ -188,6 +131,13 @@ a {
     overflow: hidden;
     line-height: 35px;
     height: 35px; }
+  #nav-wrap .nav:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden; }
   #nav-wrap .nav .nav-left .ng-site-nav-box {
     border-left: 1px solid #f5f5f5;
     border-right: 1px solid #f5f5f5; }
@@ -310,7 +260,8 @@ a {
     position: absolute;
     top: 35px;
     border: 1px solid #ddd;
-    background: #fff; }
+    background: #fff;
+    z-index: 1; }
     #nav-wrap .ng-d-box a {
       padding: 0;
       float: left; }
@@ -1082,6 +1033,63 @@ a {
   .ng-all-hook span {
     font-weight: 700; }
 
+#top_wrapper {
+  width: 100%; }
+  #top_wrapper .top-active-img {
+    background: #590208;
+    width: 100%; }
+    #top_wrapper .top-active-img img {
+      margin: 0 auto; }
+  #top_wrapper .b-close {
+    position: absolute;
+    top: 3px;
+    right: 42px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    overflow: hidden; }
+    #top_wrapper .b-close i {
+      font-style: normal;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer; }
+    #top_wrapper .b-close .bg {
+      z-index: 1;
+      background: #000;
+      opacity: .3; }
+    #top_wrapper .b-close .text {
+      z-index: 2;
+      font: 16px/16px simsun;
+      text-align: center; }
+  #top_wrapper .b-open {
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 42px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    overflow: hidden; }
+    #top_wrapper .b-open i {
+      font-style: normal;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer; }
+    #top_wrapper .b-open .bg {
+      z-index: 1;
+      background: #000;
+      opacity: .3; }
+    #top_wrapper .b-open .text {
+      z-index: 2;
+      font: 16px/16px simsun;
+      text-align: center; }
+
 .ng-nav-index {
   margin-left: -405px;
   position: absolute;
@@ -1287,236 +1295,238 @@ a {
     cursor: pointer;
     background: url("../img/index-pic/chaoshi.png") no-repeat -748px -67px; }
 
-.first-screen .banner-wrapper {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 758px;
-  height: 360px;
-  margin-left: -402px;
-  text-align: center;
-  background: #ddd; }
-  .first-screen .banner-wrapper .banner {
-    width: 100%;
-    height: 100%; }
-    .first-screen .banner-wrapper .banner li {
-      position: absolute;
-      top: 0;
-      left: 0;
+.first-screen {
+  z-index: 0; }
+  .first-screen .banner-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 758px;
+    height: 360px;
+    margin-left: -402px;
+    text-align: center;
+    background: #ddd; }
+    .first-screen .banner-wrapper .banner {
       width: 100%;
       height: 100%; }
-      .first-screen .banner-wrapper .banner li a {
-        display: block; }
-        .first-screen .banner-wrapper .banner li a img {
-          display: block;
-          width: 758px;
-          height: 360px; }
-  .first-screen .banner-wrapper .left-point {
-    left: 50%;
-    margin-left: -372px; }
-    .first-screen .banner-wrapper .left-point i {
-      background: url("../img/index-pic/chaoshi.png") no-repeat;
-      background-position: -26px -78px; }
-  .first-screen .banner-wrapper .right-point {
-    right: 50%;
-    margin-right: -372px; }
-    .first-screen .banner-wrapper .right-point i {
-      background: url("../img/index-pic/chaoshi.png") no-repeat;
-      background-position: 0 -78px; }
-  .first-screen .banner-wrapper .point {
-    position: absolute;
-    top: 159px;
-    width: 24px;
-    height: 60px;
-    line-height: 60px;
-    background-color: #000;
-    text-align: center;
-    opacity: .2;
-    filter: alpha(opacity=20);
-    z-index: 100; }
-    .first-screen .banner-wrapper .point i {
-      display: inline-block;
-      width: 24px;
-      height: 60px;
-      vertical-align: middle; }
-  .first-screen .banner-wrapper .banner-nav-wrapper {
-    position: absolute;
-    bottom: 9px;
-    width: 100%;
-    height: 10px;
-    text-align: center;
-    font-size: 0;
-    z-index: 100; }
-    .first-screen .banner-wrapper .banner-nav-wrapper .banner-nav {
-      position: relative;
-      display: inline-block;
-      height: 10px;
-      padding-left: 8px;
-      border-radius: 50%; }
-      .first-screen .banner-wrapper .banner-nav-wrapper .banner-nav a {
-        display: inline-block;
-        margin-right: 8px;
-        margin-top: 2px;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: #fff;
-        filter: alpha(opacity=60); }
-      .first-screen .banner-wrapper .banner-nav-wrapper .banner-nav .current {
-        background: #f40; }
-.first-screen .banner {
-  overflow: hidden; }
-.first-screen .c-three-entry {
-  position: absolute;
-  width: 758px;
-  height: 118px;
-  bottom: 0;
-  left: 50%;
-  margin-left: -402px; }
-  .first-screen .c-three-entry ul {
-    margin-right: -2px; }
-    .first-screen .c-three-entry ul li {
-      float: left;
-      width: 251px;
-      height: 118px;
-      margin-right: 2px;
-      background: #fff; }
-      .first-screen .c-three-entry ul li img {
-        display: block;
-        width: 251px;
-        height: 118px; }
-  .first-screen .c-three-entry .clearfix {
-    zoom: 1; }
-.first-screen .c-right-banner {
-  position: absolute;
-  width: 238px;
-  height: 780px;
-  top: 0;
-  left: 50%;
-  margin-left: 358px;
-  background: #fff; }
-  .first-screen .c-right-banner .top {
-    width: 238px;
-    height: 168px;
-    margin-bottom: 2px; }
-    .first-screen .c-right-banner .top img {
-      width: 238px;
-      height: 168px; }
-  .first-screen .c-right-banner .w-wrap {
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 6px; }
-    .first-screen .c-right-banner .w-wrap .name {
-      font: bold 14px/19px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
-      color: #d1a742;
-      padding-top: 12px; }
-    .first-screen .c-right-banner .w-wrap .line {
-      width: 120px;
-      height: 1px;
-      background: #d1a742;
-      margin: 3px auto; }
-    .first-screen .c-right-banner .w-wrap .desc {
-      font: 12px/16px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
-      color: #d1a742; }
-  .first-screen .c-right-banner .banner-wrap2 {
-    position: relative;
-    width: 238px;
-    height: 229px;
-    margin: 0 auto;
-    background: #fff;
-    text-align: center; }
-    .first-screen .c-right-banner .banner-wrap2 .banner2 {
-      position: relative;
-      width: 180px;
-      height: 229px;
-      margin: 0 auto;
-      background: url("../img/index-pic/banner2-bg.png") no-repeat; }
-      .first-screen .c-right-banner .banner-wrap2 .banner2 li {
+      .first-screen .banner-wrapper .banner li {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%; }
-        .first-screen .c-right-banner .banner-wrap2 .banner2 li a {
+        .first-screen .banner-wrapper .banner li a {
           display: block; }
-          .first-screen .c-right-banner .banner-wrap2 .banner2 li a img {
+          .first-screen .banner-wrapper .banner li a img {
             display: block;
-            width: 120px;
-            height: 120px;
-            background: #ccc;
-            margin: 28px 30px 0; }
-          .first-screen .c-right-banner .banner-wrap2 .banner2 li a .price {
-            width: 120px;
-            height: 24px;
-            font: 18px/24px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
-            color: #fff;
-            margin-left: 30px;
-            background: #fa0; }
-            .first-screen .c-right-banner .banner-wrap2 .banner2 li a .price em {
-              font-style: normal; }
-          .first-screen .c-right-banner .banner-wrap2 .banner2 li a .toSee {
-            display: inline-block;
-            color: #fff;
-            width: 71px;
-            height: 20px;
-            line-height: 20px;
-            font-size: 12px;
-            background: #fa0;
-            border-radius: 100px;
-            margin-top: 10px; }
-    .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper {
+            width: 758px;
+            height: 360px; }
+    .first-screen .banner-wrapper .left-point {
+      left: 50%;
+      margin-left: -372px; }
+      .first-screen .banner-wrapper .left-point i {
+        background: url("../img/index-pic/chaoshi.png") no-repeat;
+        background-position: -26px -78px; }
+    .first-screen .banner-wrapper .right-point {
+      right: 50%;
+      margin-right: -372px; }
+      .first-screen .banner-wrapper .right-point i {
+        background: url("../img/index-pic/chaoshi.png") no-repeat;
+        background-position: 0 -78px; }
+    .first-screen .banner-wrapper .point {
       position: absolute;
-      bottom: -10px;
+      top: 159px;
+      width: 24px;
+      height: 60px;
+      line-height: 60px;
+      background-color: #000;
+      text-align: center;
+      opacity: .2;
+      filter: alpha(opacity=20);
+      z-index: 100; }
+      .first-screen .banner-wrapper .point i {
+        display: inline-block;
+        width: 24px;
+        height: 60px;
+        vertical-align: middle; }
+    .first-screen .banner-wrapper .banner-nav-wrapper {
+      position: absolute;
+      bottom: 9px;
       width: 100%;
       height: 10px;
       text-align: center;
-      font-size: 0; }
-      .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper .banner-nav {
+      font-size: 0;
+      z-index: 100; }
+      .first-screen .banner-wrapper .banner-nav-wrapper .banner-nav {
         position: relative;
         display: inline-block;
         height: 10px;
         padding-left: 8px;
         border-radius: 50%; }
-        .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper .banner-nav .page-item2 {
+        .first-screen .banner-wrapper .banner-nav-wrapper .banner-nav a {
           display: inline-block;
           margin-right: 8px;
           margin-top: 2px;
           width: 8px;
           height: 8px;
           border-radius: 50%;
-          background-color: #d1a742;
-          opacity: .6; }
-        .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper .banner-nav .current {
+          background-color: #fff;
+          filter: alpha(opacity=60); }
+        .first-screen .banner-wrapper .banner-nav-wrapper .banner-nav .current {
           background: #f40; }
-  .first-screen .c-right-banner .left-point2 {
-    left: 50%;
-    margin-left: -119px; }
-    .first-screen .c-right-banner .left-point2 i {
-      background: url("../img/index-pic/chaoshi.png") no-repeat;
-      background-position: -26px -78px; }
-  .first-screen .c-right-banner .right-point2 {
-    right: 50%;
-    margin-right: -119px; }
-    .first-screen .c-right-banner .right-point2 i {
-      background: url("../img/index-pic/chaoshi.png") no-repeat;
-      background-position: 0 -78px; }
-  .first-screen .c-right-banner .point {
+  .first-screen .banner {
+    overflow: hidden; }
+  .first-screen .c-three-entry {
     position: absolute;
-    display: none;
-    top: 82px;
-    width: 24px;
-    height: 60px;
-    line-height: 60px;
-    background-color: #000;
-    text-align: center;
-    opacity: .2;
-    filter: alpha(opacity=20);
-    z-index: 100; }
-    .first-screen .c-right-banner .point i {
-      display: inline-block;
+    width: 758px;
+    height: 118px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -402px; }
+    .first-screen .c-three-entry ul {
+      margin-right: -2px; }
+      .first-screen .c-three-entry ul li {
+        float: left;
+        width: 251px;
+        height: 118px;
+        margin-right: 2px;
+        background: #fff; }
+        .first-screen .c-three-entry ul li img {
+          display: block;
+          width: 251px;
+          height: 118px; }
+    .first-screen .c-three-entry .clearfix {
+      zoom: 1; }
+  .first-screen .c-right-banner {
+    position: absolute;
+    width: 238px;
+    height: 780px;
+    top: 0;
+    left: 50%;
+    margin-left: 358px;
+    background: #fff; }
+    .first-screen .c-right-banner .top {
+      width: 238px;
+      height: 168px;
+      margin-bottom: 2px; }
+      .first-screen .c-right-banner .top img {
+        width: 238px;
+        height: 168px; }
+    .first-screen .c-right-banner .w-wrap {
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 6px; }
+      .first-screen .c-right-banner .w-wrap .name {
+        font: bold 14px/19px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+        color: #d1a742;
+        padding-top: 12px; }
+      .first-screen .c-right-banner .w-wrap .line {
+        width: 120px;
+        height: 1px;
+        background: #d1a742;
+        margin: 3px auto; }
+      .first-screen .c-right-banner .w-wrap .desc {
+        font: 12px/16px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+        color: #d1a742; }
+    .first-screen .c-right-banner .banner-wrap2 {
+      position: relative;
+      width: 238px;
+      height: 229px;
+      margin: 0 auto;
+      background: #fff;
+      text-align: center; }
+      .first-screen .c-right-banner .banner-wrap2 .banner2 {
+        position: relative;
+        width: 180px;
+        height: 229px;
+        margin: 0 auto;
+        background: url("../img/index-pic/banner2-bg.png") no-repeat; }
+        .first-screen .c-right-banner .banner-wrap2 .banner2 li {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+          .first-screen .c-right-banner .banner-wrap2 .banner2 li a {
+            display: block; }
+            .first-screen .c-right-banner .banner-wrap2 .banner2 li a img {
+              display: block;
+              width: 120px;
+              height: 120px;
+              background: #ccc;
+              margin: 28px 30px 0; }
+            .first-screen .c-right-banner .banner-wrap2 .banner2 li a .price {
+              width: 120px;
+              height: 24px;
+              font: 18px/24px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+              color: #fff;
+              margin-left: 30px;
+              background: #fa0; }
+              .first-screen .c-right-banner .banner-wrap2 .banner2 li a .price em {
+                font-style: normal; }
+            .first-screen .c-right-banner .banner-wrap2 .banner2 li a .toSee {
+              display: inline-block;
+              color: #fff;
+              width: 71px;
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px;
+              background: #fa0;
+              border-radius: 100px;
+              margin-top: 10px; }
+      .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper {
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 10px;
+        text-align: center;
+        font-size: 0; }
+        .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper .banner-nav {
+          position: relative;
+          display: inline-block;
+          height: 10px;
+          padding-left: 8px;
+          border-radius: 50%; }
+          .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper .banner-nav .page-item2 {
+            display: inline-block;
+            margin-right: 8px;
+            margin-top: 2px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #d1a742;
+            opacity: .6; }
+          .first-screen .c-right-banner .banner-wrap2 .banner-nav-wrapper .banner-nav .current {
+            background: #f40; }
+    .first-screen .c-right-banner .left-point2 {
+      left: 50%;
+      margin-left: -119px; }
+      .first-screen .c-right-banner .left-point2 i {
+        background: url("../img/index-pic/chaoshi.png") no-repeat;
+        background-position: -26px -78px; }
+    .first-screen .c-right-banner .right-point2 {
+      right: 50%;
+      margin-right: -119px; }
+      .first-screen .c-right-banner .right-point2 i {
+        background: url("../img/index-pic/chaoshi.png") no-repeat;
+        background-position: 0 -78px; }
+    .first-screen .c-right-banner .point {
+      position: absolute;
+      display: none;
+      top: 82px;
       width: 24px;
       height: 60px;
-      vertical-align: middle; }
+      line-height: 60px;
+      background-color: #000;
+      text-align: center;
+      opacity: .2;
+      filter: alpha(opacity=20);
+      z-index: 100; }
+      .first-screen .c-right-banner .point i {
+        display: inline-block;
+        width: 24px;
+        height: 60px;
+        vertical-align: middle; }
 
 .qiang-wrap {
   position: relative;
@@ -1697,8 +1707,6 @@ a {
       width: 91px;
       height: 80px;
       background: #ff5d5d; }
-      .c-rank .c-rank-nav ul li:hover {
-        background: #c20000; }
       .c-rank .c-rank-nav ul li .icon {
         width: 42px;
         height: 42px;
@@ -1740,6 +1748,8 @@ a {
         text-align: center;
         font: 12px/16px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
         overflow: hidden; }
+    .c-rank .c-rank-nav ul .hover {
+      background: #c20000; }
   .c-rank .c-title .icon {
     background-position: -438px -104px; }
 

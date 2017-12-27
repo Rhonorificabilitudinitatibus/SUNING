@@ -356,9 +356,11 @@
     height: 14px;
     margin: 2px 9px 0 0;
     background: url("../img/cart-pic/icon-cart.png") 0 -20px;
+    
+}
+.cart-toolbar .l-column .choose .icon{
     background-position:0 -36px;
 }
-
 .cart-toolbar .toolbar-box .del-selected {
     color: #666;
 }

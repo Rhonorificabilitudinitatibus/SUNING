@@ -1,4 +1,13 @@
 $(function() {
+	if(getCookie("UN")){
+		var obj = JSON.parse(getCookie("UN"));
+		var userinfo = obj.name;
+		console.log(userinfo);
+		$(".reg-bar-node").find(".reg-bbb").hide();
+		$(".reg-bar-node").find(".login").attr("href","###");
+		$(".reg-bar-node").find(".login").html(userinfo);
+		$(".ng-bar-node-mini-cart").attr("href","cart.html");
+	}
 	$(".b-close").click(function() {
 		$(".top-active-img").hide().end().find(".b-open").show().end().find(".b-close").hide();
 		$(".b-open").click(function() {

@@ -1349,7 +1349,8 @@ a {
       height: 30px; }
     .pro-detail .buycount dd .minus-disabled {
       background-image: url("../img/detail-pic/small.png");
-      background-position: -862px -325px; }
+      background-position: -862px -325px;
+      cursor: not-allowed; }
     .pro-detail .buycount dd input {
       float: left;
       width: 25px;
